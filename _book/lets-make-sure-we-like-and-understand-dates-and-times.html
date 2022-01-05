@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 6 Let’s make sure we like and understand dates and times: | A Minimal Book Example</title>
+<meta name="author" content="John Doe">
+<meta name="description" content='6.1 Point of these questions? Does every year have 365 days? Does every day have 24 hours? Does every minute have 60 seconds?  6.2 Do these code chunks make sense: today() #&gt; [1] "2022-01-05"...'>
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Chapter 6 Let’s make sure we like and understand dates and times: | A Minimal Book Example">
+<meta property="og:type" content="book">
+<meta property="og:description" content='6.1 Point of these questions? Does every year have 365 days? Does every day have 24 hours? Does every minute have 60 seconds?  6.2 Do these code chunks make sense: today() #&gt; [1] "2022-01-05"...'>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 6 Let’s make sure we like and understand dates and times: | A Minimal Book Example">
+<meta name="twitter:description" content='6.1 Point of these questions? Does every year have 365 days? Does every day have 24 hours? Does every minute have 60 seconds?  6.2 Do these code chunks make sense: today() #&gt; [1] "2022-01-05"...'>
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="bs4_style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">A Minimal Book Example</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> About</a></li>
+<li><a class="" href="syllabus.html"><span class="header-section-number">2</span> Syllabus</a></li>
+<li><a class="" href="schedule.html"><span class="header-section-number">3</span> Schedule</a></li>
+<li><a class="" href="data-science-overview.html"><span class="header-section-number">4</span> Data Science Overview</a></li>
+<li><a class="" href="in-class-fun-with-dates-times-data-viz-and-wrangling.html"><span class="header-section-number">5</span> In-class fun with dates, times, data viz and wrangling</a></li>
+<li><a class="active" href="lets-make-sure-we-like-and-understand-dates-and-times.html"><span class="header-section-number">6</span> Let’s make sure we like and understand dates and times:</a></li>
+<li><a class="" href="about-1.html"><span class="header-section-number">7</span> About</a></li>
+<li><a class="" href="hello-bookdown.html"><span class="header-section-number">8</span> Hello bookdown</a></li>
+<li><a class="" href="cross.html"><span class="header-section-number">9</span> Cross-references</a></li>
+<li><a class="" href="parts.html"><span class="header-section-number">10</span> Parts</a></li>
+<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">11</span> Footnotes and citations</a></li>
+<li><a class="" href="blocks.html"><span class="header-section-number">12</span> Blocks</a></li>
+<li><a class="" href="sharing-your-book.html"><span class="header-section-number">13</span> Sharing your book</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="lets-make-sure-we-like-and-understand-dates-and-times" class="section level1" number="6">
+<h1>
+<span class="header-section-number">6</span> Let’s make sure we like and understand dates and times:<a class="anchor" aria-label="anchor" href="#lets-make-sure-we-like-and-understand-dates-and-times"><i class="fas fa-link"></i></a>
+</h1>
+<div id="point-of-these-questions" class="section level2" number="6.1">
+<h2>
+<span class="header-section-number">6.1</span> Point of these questions?<a class="anchor" aria-label="anchor" href="#point-of-these-questions"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>Does every year have 365 days?</li>
+<li>Does every day have 24 hours?</li>
+<li>Does every minute have 60 seconds?</li>
+</ul>
+</div>
+<div id="do-these-code-chunks-make-sense" class="section level2" number="6.2">
+<h2>
+<span class="header-section-number">6.2</span> Do these code chunks make sense:<a class="anchor" aria-label="anchor" href="#do-these-code-chunks-make-sense"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://lubridate.tidyverse.org/reference/now.html">today</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt; [1] "2022-01-05"</span>
+<span class="fu"><a href="https://lubridate.tidyverse.org/reference/now.html">now</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co">#&gt; [1] "2022-01-05 09:31:42 EST"</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">flights</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">hour</span>, <span class="va">minute</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>departure <span class="op">=</span> <span class="fu"><a href="https://lubridate.tidyverse.org/reference/make_datetime.html">make_datetime</a></span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">hour</span>, <span class="va">minute</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; # A tibble: 336,776 x 6</span>
+<span class="co">#&gt;     year month   day  hour minute departure          </span>
+<span class="co">#&gt;    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dttm&gt;             </span>
+<span class="co">#&gt;  1  2013     1     1     5     15 2013-01-01 05:15:00</span>
+<span class="co">#&gt;  2  2013     1     1     5     29 2013-01-01 05:29:00</span>
+<span class="co">#&gt;  3  2013     1     1     5     40 2013-01-01 05:40:00</span>
+<span class="co">#&gt;  4  2013     1     1     5     45 2013-01-01 05:45:00</span>
+<span class="co">#&gt;  5  2013     1     1     6      0 2013-01-01 06:00:00</span>
+<span class="co">#&gt;  6  2013     1     1     5     58 2013-01-01 05:58:00</span>
+<span class="co">#&gt;  7  2013     1     1     6      0 2013-01-01 06:00:00</span>
+<span class="co">#&gt;  8  2013     1     1     6      0 2013-01-01 06:00:00</span>
+<span class="co">#&gt;  9  2013     1     1     6      0 2013-01-01 06:00:00</span>
+<span class="co">#&gt; 10  2013     1     1     6      0 2013-01-01 06:00:00</span>
+<span class="co">#&gt; # ... with 336,766 more rows</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">make_datetime_100</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">time</span><span class="op">)</span> <span class="op">{</span>
+  <span class="fu"><a href="https://lubridate.tidyverse.org/reference/make_datetime.html">make_datetime</a></span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">time</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%/%</a></span> <span class="fl">100</span>, <span class="va">time</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%%</a></span> <span class="fl">100</span><span class="op">)</span>
+<span class="op">}</span>
+
+<span class="va">flights_dt</span> <span class="op">&lt;-</span> <span class="va">flights</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">dep_time</span><span class="op">)</span>, <span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">arr_time</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>
+    dep_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">dep_time</span><span class="op">)</span>,
+    arr_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">arr_time</span><span class="op">)</span>,
+    sched_dep_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">sched_dep_time</span><span class="op">)</span>,
+    sched_arr_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">sched_arr_time</span><span class="op">)</span>
+  <span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">origin</span>, <span class="va">dest</span>, <span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">ends_with</a></span><span class="op">(</span><span class="st">"delay"</span><span class="op">)</span>, <span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">ends_with</a></span><span class="op">(</span><span class="st">"time"</span><span class="op">)</span><span class="op">)</span>
+
+<span class="va">flights_dt</span>
+<span class="co">#&gt; # A tibble: 328,063 x 9</span>
+<span class="co">#&gt;    origin dest  dep_delay arr_delay dep_time           </span>
+<span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt;     &lt;dbl&gt; &lt;dttm&gt;             </span>
+<span class="co">#&gt;  1 EWR    IAH           2        11 2013-01-01 05:17:00</span>
+<span class="co">#&gt;  2 LGA    IAH           4        20 2013-01-01 05:33:00</span>
+<span class="co">#&gt;  3 JFK    MIA           2        33 2013-01-01 05:42:00</span>
+<span class="co">#&gt;  4 JFK    BQN          -1       -18 2013-01-01 05:44:00</span>
+<span class="co">#&gt;  5 LGA    ATL          -6       -25 2013-01-01 05:54:00</span>
+<span class="co">#&gt;  6 EWR    ORD          -4        12 2013-01-01 05:54:00</span>
+<span class="co">#&gt;  7 EWR    FLL          -5        19 2013-01-01 05:55:00</span>
+<span class="co">#&gt;  8 LGA    IAD          -3       -14 2013-01-01 05:57:00</span>
+<span class="co">#&gt;  9 JFK    MCO          -3        -8 2013-01-01 05:57:00</span>
+<span class="co">#&gt; 10 LGA    ORD          -2         8 2013-01-01 05:58:00</span>
+<span class="co">#&gt; # ... with 328,053 more rows, and 4 more variables:</span>
+<span class="co">#&gt; #   sched_dep_time &lt;dttm&gt;, arr_time &lt;dttm&gt;,</span>
+<span class="co">#&gt; #   sched_arr_time &lt;dttm&gt;, air_time &lt;dbl&gt;</span></code></pre></div>
+<div id="hadley-says-with-this-data-i-can-visualise-the-distribution-of-departure-times-across-the-year" class="section level3" number="6.2.1">
+<h3>
+<span class="header-section-number">6.2.1</span> Hadley says: “With this data, I can visualise the distribution of departure times across the year”<a class="anchor" aria-label="anchor" href="#hadley-says-with-this-data-i-can-visualise-the-distribution-of-departure-times-across-the-year"><i class="fas fa-link"></i></a>
+</h3>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">flights_dt</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span><span class="va">dep_time</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
+  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_freqpoly</a></span><span class="op">(</span>binwidth <span class="op">=</span> <span class="fl">86400</span><span class="op">)</span> <span class="co"># 86400 seconds = 1 day</span></code></pre></div>
+<div class="inline-figure"><img src="17-in_class_10_files/figure-html/unnamed-chunk-4-1.png" width="672"></div>
+</div>
+</div>
+<div id="the-following-code-from-the-chapter-is-used.-does-it-make-sense" class="section level2" number="6.3">
+<h2>
+<span class="header-section-number">6.3</span> The following code from the chapter is used. Does it make sense?<a class="anchor" aria-label="anchor" href="#the-following-code-from-the-chapter-is-used.-does-it-make-sense"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">make_datetime_100</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">time</span><span class="op">)</span> <span class="op">{</span>
+  <span class="fu"><a href="https://lubridate.tidyverse.org/reference/make_datetime.html">make_datetime</a></span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">time</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%/%</a></span> <span class="fl">100</span>, <span class="va">time</span> <span class="op"><a href="https://rdrr.io/r/base/Arithmetic.html">%%</a></span> <span class="fl">100</span><span class="op">)</span>
+<span class="op">}</span>
+
+<span class="va">flights_dt</span> <span class="op">&lt;-</span> <span class="va">flights</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">dep_time</span><span class="op">)</span>, <span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">arr_time</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>
+    dep_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">dep_time</span><span class="op">)</span>,
+    arr_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">arr_time</span><span class="op">)</span>,
+    sched_dep_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">sched_dep_time</span><span class="op">)</span>,
+    sched_arr_time <span class="op">=</span> <span class="fu">make_datetime_100</span><span class="op">(</span><span class="va">year</span>, <span class="va">month</span>, <span class="va">day</span>, <span class="va">sched_arr_time</span><span class="op">)</span>
+  <span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">origin</span>, <span class="va">dest</span>, <span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">ends_with</a></span><span class="op">(</span><span class="st">"delay"</span><span class="op">)</span>, <span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html">ends_with</a></span><span class="op">(</span><span class="st">"time"</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">sched_dep</span> <span class="op">&lt;-</span> <span class="va">flights_dt</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>minute <span class="op">=</span> <span class="fu"><a href="https://lubridate.tidyverse.org/reference/minute.html">minute</a></span><span class="op">(</span><span class="va">sched_dep_time</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">minute</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span>
+    avg_delay <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">arr_delay</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,
+    n <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span>
+  <span class="op">)</span></code></pre></div>
+</div>
+<div id="what-do-these-do-floor_date-round_date-and-ceiling_date" class="section level2" number="6.4">
+<h2>
+<span class="header-section-number">6.4</span> What do these do: <code>floor_date()</code>, <code>round_date()</code>, and <code>ceiling_date()</code>?<a class="anchor" aria-label="anchor" href="#what-do-these-do-floor_date-round_date-and-ceiling_date"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="try-these" class="section level2" number="6.5">
+<h2>
+<span class="header-section-number">6.5</span> Try these<a class="anchor" aria-label="anchor" href="#try-these"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li><p>Look at the number of cancelled flights per day. Is there a pattern? Is the proportion of cancelled flights related to the average delay?</p></li>
+<li><p>Which carrier has the worst delays? Challenge: can you disentangle the effects of bad airports vs. bad carriers? Why/why not? (Hint: think about <code>flights %&gt;% group_by(carrier, dest) %&gt;% summarise(n())</code>)</p></li>
+<li><p>Use a good old visual aid to illustrate if/how how the average delay time changes over the course of a day. Your graph should answer, do flights get more late as the day goes on?</p></li>
+<li><p>On what day of the week should you leave if you want to minimize the chance of a delay? How do you know? Use a bar chart to show the average delay for each day of the week.</p></li>
+<li><p>Are early arrivals of flights caused more by scheduled flights that leave early or that make up time in the air?</p></li>
+</ol>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="in-class-fun-with-dates-times-data-viz-and-wrangling.html"><span class="header-section-number">5</span> In-class fun with dates, times, data viz and wrangling</a></div>
+<div class="next"><a href="about-1.html"><span class="header-section-number">7</span> About</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#lets-make-sure-we-like-and-understand-dates-and-times"><span class="header-section-number">6</span> Let’s make sure we like and understand dates and times:</a></li>
+<li><a class="nav-link" href="#point-of-these-questions"><span class="header-section-number">6.1</span> Point of these questions?</a></li>
+<li>
+<a class="nav-link" href="#do-these-code-chunks-make-sense"><span class="header-section-number">6.2</span> Do these code chunks make sense:</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#hadley-says-with-this-data-i-can-visualise-the-distribution-of-departure-times-across-the-year"><span class="header-section-number">6.2.1</span> Hadley says: “With this data, I can visualise the distribution of departure times across the year”</a></li></ul>
+</li>
+<li><a class="nav-link" href="#the-following-code-from-the-chapter-is-used.-does-it-make-sense"><span class="header-section-number">6.3</span> The following code from the chapter is used. Does it make sense?</a></li>
+<li><a class="nav-link" href="#what-do-these-do-floor_date-round_date-and-ceiling_date"><span class="header-section-number">6.4</span> What do these do: floor_date(), round_date(), and ceiling_date()?</a></li>
+<li><a class="nav-link" href="#try-these"><span class="header-section-number">6.5</span> Try these</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/17-in_class_10.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/17-in_class_10.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>A Minimal Book Example</strong>" was written by John Doe. It was last built on 2022-01-05.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>
