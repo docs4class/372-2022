@@ -15,11 +15,19 @@ csl: chicago-fullnote-bibliography.csl
 
 # About this course
 
+This is a book written which contains serves as headquarters for **BADM 372 Intro to Applied  Analytics**. 
 
 
-```r
-bookdown::serve_book()
-```
+This book is updated automatically with any changes made to the documents during the semester, so if at any point you are told there was a change in the assignment, you can come here to get the updated version.
+
+Also, this book has benefited greatly from lots of free, readily available resources posted on the web and we leverage these extensively. I would encourage you to review these resources in your analytics journey. Some that we specifically use with great frequency are these (and I say loud THANK YOU to the authors!):
+
+    R for Data Science
+    An Introduction to Statistical Learning with Applications in R
+    R: A self-learn tutorial
+    Data Science in a Box
+    stackoverflow.com, for example
+
 
 
 

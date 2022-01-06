@@ -1,13 +1,12 @@
 # Schedule
 
-This is a tentative schedule, **BUT** I will do my very best to stick to it, so that you may plan accordingly!
+This is a tentative schedule, and it will change.  **BUT** I will do my very best to review this often so that we all stay on the same page and so that you may plan accordingly!
 
 ## Spring 2022  {-}
 
 
 Date | Topic | 				
 |:-------|:------				
-| 	Date	| 	A2	| 
 | 	Monday, January 10, 2022	| 	Intro and A1 review	| 
 | 	Wednesday, January 12, 2022	| 	A1 Review & Look ahead to trees & forests	| 
 | 	Friday, January 14, 2022	| 	QUIZ 1	| 
