@@ -4,9 +4,9 @@
 %
 \documentclass[
 ]{book}
-\title{A Minimal Book Example}
-\author{John Doe}
-\date{2022-01-05}
+\title{BADM 372 Applied Analytics}
+\author{BADM 372}
+\date{2022-01-06}
 
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -40,8 +40,8 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={A Minimal Book Example},
-  pdfauthor={John Doe},
+  pdftitle={BADM 372 Applied Analytics},
+  pdfauthor={BADM 372},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -143,47 +143,8 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{about}{%
-\chapter{About}\label{about}}
-
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
-
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
-
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
-
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
-
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-\hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
-
-You can render the HTML version of this example book without changing anything:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Find the \textbf{Build} pane in the RStudio IDE, and
-\item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
-\end{enumerate}
-
-Or build the book from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
+\hypertarget{about-this-course}{%
+\chapter{About this course}\label{about-this-course}}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -350,107 +311,136 @@ This is a tentative schedule, \textbf{BUT} I will do my very best to stick to it
 \section*{Spring 2022}\label{spring-2022}}
 \addcontentsline{toc}{section}{Spring 2022}
 
-\begin{itemize}
-\tightlist
-\item
-  Monday, January 10, 2022 TARGET STORY \& INSTALL
-\item
-  Wednesday, January 12, 2022 BASICS 1
-\item
-  Friday, January 14, 2022 QUIZ
-\item
-  Monday, January 17, 2022 MLK Holiday
-\item
-  Wednesday, January 19, 2022 SELF LEARN
-\item
-  Friday, January 21, 2022 QUIZ
-\item
-  Monday, January 24, 2022 Class
-\item
-  Wednesday, January 26, 2022 Class
-\item
-  Friday, January 28, 2022 QUIZ
-\item
-  Monday, January 31, 2022 Class
-\item
-  Wednesday, February 2, 2022 Class
-\item
-  Friday, February 4, 2022 QUIZ
-\item
-  Monday, February 7, 2022 Social Dilemma and Review
-\item
-  Wednesday, February 9, 2022 EXAM 1
-\item
-  Friday, February 11, 2022 Class
-\item
-  Monday, February 14, 2022 Class
-\item
-  Wednesday, February 16, 2022 Online Class
-\item
-  Friday, February 18, 2022 Online QUIZ
-\item
-  Monday, February 21, 2022 Class
-\item
-  Wednesday, February 23, 2022 Class
-\item
-  Friday, February 25, 2022 QUIZ
-\item
-  Monday, February 28, 2022 Class
-\item
-  Wednesday, March 2, 2022 Class
-\item
-  Friday, March 4, 2022 QUIZ
-\item
-  Monday, March 7, 2022 EXAM 2
-\item
-  Wednesday, March 9, 2022 Online Class
-\item
-  Friday, March 11, 2022 Online Class
-\item
-  Monday, March 14, 2022 SPRING BREAK
-\item
-  Wednesday, March 16, 2022 SPRING BREAK
-\item
-  Friday, March 18, 2022 SPRING BREAK
-\item
-  Monday, March 21, 2022 Class
-\item
-  Wednesday, March 23, 2022 Class
-\item
-  Friday, March 25, 2022 QUIZ
-\item
-  Monday, March 28, 2022 Class \& ADVISING WEEK
-\item
-  Wednesday, March 30, 2022 Class \& ADVISING WEEK
-\item
-  Friday, April 1, 2022 QUIZ
-\item
-  Monday, April 4, 2022 Class
-\item
-  Wednesday, April 6, 2022 Class
-\item
-  Friday, April 8, 2022 QUIZ
-\item
-  Monday, April 11, 2022 Class
-\item
-  Wednesday, April 13, 2022 EXAM 3
-\item
-  Friday, April 15, 2022 Easter Holidays
-\item
-  Monday, April 18, 2022 Easter Holidays
-\item
-  Wednesday, April 20, 2022 Class
-\item
-  Friday, April 22, 2022 QUIZ
-\item
-  Monday, April 25, 2022 Class
-\item
-  Wednesday, April 27, 2022 QUIZ
-\item
-  Friday, April 29, 2022 LAST DAY
-\item
-  Monday, May 2, 2022 Final Exam 5:30 p.m. -- E period
-\end{itemize}
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Date & Topic \\
+\midrule
+\endhead
+Date & A2 \\
+Monday, January 10, 2022 & Intro and A1 review \\
+Wednesday, January 12, 2022 & A1 Review \& Look ahead to trees \& forests \\
+Friday, January 14, 2022 & QUIZ 1 \\
+Monday, January 17, 2022 & MLK Holiday \\
+Wednesday, January 19, 2022 & RMARKDOWN \\
+Friday, January 21, 2022 & RMARKOWN WITH SLIDES ASSIGNMENT \\
+Monday, January 24, 2022 & GGPLOT \\
+Wednesday, January 26, 2022 & GGPLOT \\
+Friday, January 28, 2022 & GG PLOT QUIZ \\
+Monday, January 31, 2022 & TIDY SPREAD AND GATHER (R4DS CH 9 DPLYR) \\
+Wednesday, February 2, 2022 & RELATIONAL DATA (R4DS CH 10 DPLYR) \\
+Friday, February 4, 2022 & QUIZ \\
+Monday, February 7, 2022 & STRINGS (R4DS CH 11 stringr) \\
+Wednesday, February 9, 2022 & STRINGS (R4DS CH 12 factors) \\
+Friday, February 11, 2022 & QUIZ \\
+Monday, February 14, 2022 & Dates and Times \\
+Wednesday, February 16, 2022 & Dates and Times \\
+Friday, February 18, 2022 & QUIZ \\
+Monday, February 21, 2022 & Functions \\
+Wednesday, February 23, 2022 & Functions \\
+Friday, February 25, 2022 & QUIZ \\
+Monday, February 28, 2022 & Itertation \\
+Wednesday, March 2, 2022 & Itertation \\
+Friday, March 4, 2022 & QUIZ \\
+Monday, March 7, 2022 & LAUNCH PROJECT \\
+Wednesday, March 9, 2022 & INDEPENDENT PROJECT \\
+Friday, March 11, 2022 & INDEPENDENT PROJECT \\
+Monday, March 14, 2022 & SPRING BREAK \\
+Wednesday, March 16, 2022 & SPRING BREAK \\
+Friday, March 18, 2022 & SPRING BREAK \\
+Monday, March 21, 2022 & INDEPENDENT PROJECT \\
+Wednesday, March 23, 2022 & PRESENTATIONS \\
+Friday, March 25, 2022 & PRESENTATIONS \\
+Monday, March 28, 2022 & Model Builiding/ADVISING WEEK \\
+Wednesday, March 30, 2022 & Model Builiding/ADVISING WEEK \\
+Friday, April 1, 2022 & QUIZ \\
+Monday, April 4, 2022 & regrssion \\
+Wednesday, April 6, 2022 & stepwise addition/deletion \\
+Friday, April 8, 2022 & QUIZ \\
+Monday, April 11, 2022 & logistic regression \\
+Wednesday, April 13, 2022 & trees \& forests \\
+Friday, April 15, 2022 & Easter Holidays \\
+Monday, April 18, 2022 & Easter Holidays \\
+Wednesday, April 20, 2022 & Model Builiding \\
+Friday, April 22, 2022 & QUIZ \\
+Monday, April 25, 2022 & PRESENTATIONS \\
+Wednesday, April 27, 2022 & PRESENTATIONS \\
+Friday, April 29, 2022 & LAST DAY \\
+Monday, May 2, 2022 & Final Exam 8:30 p.m. -- F period \\
+\bottomrule
+\end{longtable}
+
+\hypertarget{now}{%
+\section{now}\label{now}}
+
+\textbar:-----\textbar-----------\textbar{}
+
+\hypertarget{now-again}{%
+\section{now again}\label{now-again}}
+
+~~:----- \textbar{} \textbar-----------\textbar{}\\
+\hspace*{0.333em}\hspace*{0.333em}Monday, January 10, 2022 \textbar{} Intro and A1 review \textbar{}\\
+\hspace*{0.333em}\hspace*{0.333em}Test 2 \textbar{} Test 2 \textbar{}
+
+\hypertarget{now-again-1}{%
+\section{now again}\label{now-again-1}}
+
+\begin{longtable}[]{@{}rlll@{}}
+\toprule
+Center & & & \\
+\midrule
+\endhead
+Date & & & \\
+Monday, January 10, 2022 & & & \\
+Wednesday, January 12, 2022 & & & \\
+Friday, January 14, 2022 & & & \\
+Monday, January 17, 2022 & & & \\
+Wednesday, January 19, 2022 & & & \\
+Friday, January 21, 2022 & & & \\
+Monday, January 24, 2022 & & & \\
+Wednesday, January 26, 2022 & & & \\
+Friday, January 28, 2022 & & & \\
+Monday, January 31, 2022 & & & \\
+Wednesday, February 2, 2022 & & & \\
+Friday, February 4, 2022 & & & \\
+Monday, February 7, 2022 & & & \\
+Wednesday, February 9, 2022 & & & \\
+Friday, February 11, 2022 & & & \\
+Monday, February 14, 2022 & & & \\
+Wednesday, February 16, 2022 & & & \\
+Friday, February 18, 2022 & & & \\
+Monday, February 21, 2022 & & & \\
+Wednesday, February 23, 2022 & & & \\
+Friday, February 25, 2022 & & & \\
+Monday, February 28, 2022 & & & \\
+Wednesday, March 2, 2022 & & & \\
+Friday, March 4, 2022 & & & \\
+Monday, March 7, 2022 & & & \\
+Wednesday, March 9, 2022 & & & \\
+Friday, March 11, 2022 & & & \\
+Monday, March 14, 2022 & & & \\
+Wednesday, March 16, 2022 & & & \\
+Friday, March 18, 2022 & & & \\
+Monday, March 21, 2022 & & & \\
+Wednesday, March 23, 2022 & & & \\
+Friday, March 25, 2022 & & & \\
+Monday, March 28, 2022 & & & \\
+Wednesday, March 30, 2022 & & & \\
+Friday, April 1, 2022 & & & \\
+Monday, April 4, 2022 & & & \\
+Wednesday, April 6, 2022 & & & \\
+Friday, April 8, 2022 & & & \\
+Monday, April 11, 2022 & & & \\
+Wednesday, April 13, 2022 & & & \\
+Friday, April 15, 2022 & & & \\
+Monday, April 18, 2022 & & & \\
+Wednesday, April 20, 2022 & & & \\
+Friday, April 22, 2022 & & & \\
+Monday, April 25, 2022 & & & \\
+Wednesday, April 27, 2022 & & & \\
+Friday, April 29, 2022 & & & \\
+Monday, May 2, 2022 & & & \\
+\bottomrule
+\end{longtable}
 
 \hypertarget{data-science-overview}{%
 \chapter{Data Science Overview}\label{data-science-overview}}
@@ -777,8 +767,8 @@ Most stats take additional parameters to specify the details of statistical tran
 
 The method used to adjusting overlapping objects, like jittering, stacking or dodging. More details in position.
 
-\hypertarget{about-1}{%
-\chapter{About}\label{about-1}}
+\hypertarget{about}{%
+\chapter{About}\label{about}}
 
 \begin{quote}
 Originally from the default index.
@@ -786,8 +776,8 @@ Originally from the default index.
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
 
-\hypertarget{usage-1}{%
-\section{Usage}\label{usage-1}}
+\hypertarget{usage}{%
+\section{Usage}\label{usage}}
 
 Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
 
@@ -795,8 +785,8 @@ Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ shor
 
 The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
-\hypertarget{render-book-1}{%
-\section{Render book}\label{render-book-1}}
+\hypertarget{render-book}{%
+\section{Render book}\label{render-book}}
 
 You can render the HTML version of this example book without changing anything:
 
@@ -818,8 +808,8 @@ Or build the book from the R console:
 
 To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
 
-\hypertarget{preview-book-1}{%
-\section{Preview book}\label{preview-book-1}}
+\hypertarget{preview-book}{%
+\section{Preview book}\label{preview-book}}
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
 

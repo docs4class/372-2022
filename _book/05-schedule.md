@@ -4,53 +4,123 @@ This is a tentative schedule, **BUT** I will do my very best to stick to it, so 
 
 ## Spring 2022  {-}
 
-* Monday, January 10, 2022	TARGET STORY & INSTALL
-* Wednesday, January 12, 2022	BASICS 1
-* Friday, January 14, 2022	QUIZ
-* Monday, January 17, 2022	MLK Holiday
-* Wednesday, January 19, 2022	SELF LEARN
-* Friday, January 21, 2022	QUIZ
-* Monday, January 24, 2022	Class
-* Wednesday, January 26, 2022	Class
-* Friday, January 28, 2022	QUIZ
-* Monday, January 31, 2022	Class
-* Wednesday, February 2, 2022	Class
-* Friday, February 4, 2022	QUIZ
-* Monday, February 7, 2022	Social Dilemma and Review
-* Wednesday, February 9, 2022	EXAM 1
-* Friday, February 11, 2022	Class
-* Monday, February 14, 2022	Class
-* Wednesday, February 16, 2022	Online Class
-* Friday, February 18, 2022	Online QUIZ
-* Monday, February 21, 2022	Class
-* Wednesday, February 23, 2022	Class
-* Friday, February 25, 2022	QUIZ
-* Monday, February 28, 2022	Class
-* Wednesday, March 2, 2022	Class
-* Friday, March 4, 2022	QUIZ
-* Monday, March 7, 2022	EXAM 2
-* Wednesday, March 9, 2022	Online Class
-* Friday, March 11, 2022	Online Class
-* Monday, March 14, 2022	SPRING BREAK
-* Wednesday, March 16, 2022	SPRING BREAK
-* Friday, March 18, 2022	SPRING BREAK
-* Monday, March 21, 2022	Class
-* Wednesday, March 23, 2022	Class
-* Friday, March 25, 2022	QUIZ
-* Monday, March 28, 2022	Class & ADVISING WEEK
-* Wednesday, March 30, 2022	Class & ADVISING WEEK
-* Friday, April 1, 2022	QUIZ
-* Monday, April 4, 2022	Class
-* Wednesday, April 6, 2022	Class
-* Friday, April 8, 2022	QUIZ
-* Monday, April 11, 2022	Class
-* Wednesday, April 13, 2022	EXAM 3
-* Friday, April 15, 2022	Easter Holidays
-* Monday, April 18, 2022	Easter Holidays
-* Wednesday, April 20, 2022	Class
-* Friday, April 22, 2022	QUIZ
-* Monday, April 25, 2022	Class
-* Wednesday, April 27, 2022	QUIZ
-* Friday, April 29, 2022	LAST DAY
-* Monday, May 2, 2022	Final Exam 5:30 p.m. – E period
 
+Date | Topic | 				
+|:-------|:------				
+| 	Date	| 	A2	| 
+| 	Monday, January 10, 2022	| 	Intro and A1 review	| 
+| 	Wednesday, January 12, 2022	| 	A1 Review & Look ahead to trees & forests	| 
+| 	Friday, January 14, 2022	| 	QUIZ 1	| 
+| 	Monday, January 17, 2022	| 	MLK Holiday	| 
+| 	Wednesday, January 19, 2022	| 	RMARKDOWN	| 
+| 	Friday, January 21, 2022	| 	RMARKOWN WITH SLIDES ASSIGNMENT	| 
+| 	Monday, January 24, 2022	| 	GGPLOT	| 
+| 	Wednesday, January 26, 2022	| 	GGPLOT	| 
+| 	Friday, January 28, 2022	| 	GG PLOT QUIZ	| 
+| 	Monday, January 31, 2022	| 	TIDY SPREAD AND GATHER (R4DS CH 9 DPLYR)	| 
+| 	Wednesday, February 2, 2022	| 	RELATIONAL DATA  (R4DS CH 10 DPLYR)	| 
+| 	Friday, February 4, 2022	| 	QUIZ	| 
+| 	Monday, February 7, 2022	| 	STRINGS  (R4DS CH 11  stringr)	| 
+| 	Wednesday, February 9, 2022	| 	STRINGS  (R4DS CH 12 factors)	| 
+| 	Friday, February 11, 2022	| 	QUIZ	| 
+| 	Monday, February 14, 2022	| 	Dates and Times	| 
+| 	Wednesday, February 16, 2022	| 	Dates and Times	| 
+| 	Friday, February 18, 2022	| 	QUIZ	| 
+| 	Monday, February 21, 2022	| 	Functions	| 
+| 	Wednesday, February 23, 2022	| 	Functions	| 
+| 	Friday, February 25, 2022	| 	QUIZ	| 
+| 	Monday, February 28, 2022	| 	Itertation	| 
+| 	Wednesday, March 2, 2022	| 	Itertation	| 
+| 	Friday, March 4, 2022	| 	QUIZ	| 
+| 	Monday, March 7, 2022	| 	LAUNCH PROJECT	| 
+| 	Wednesday, March 9, 2022	| 	INDEPENDENT PROJECT	| 
+| 	Friday, March 11, 2022	| 	INDEPENDENT PROJECT	| 
+| 	Monday, March 14, 2022	| 	SPRING BREAK	| 
+| 	Wednesday, March 16, 2022	| 	SPRING BREAK	| 
+| 	Friday, March 18, 2022	| 	SPRING BREAK	| 
+| 	Monday, March 21, 2022	| 	INDEPENDENT PROJECT	| 
+| 	Wednesday, March 23, 2022	| 	PRESENTATIONS	| 
+| 	Friday, March 25, 2022	| 	PRESENTATIONS	| 
+| 	Monday, March 28, 2022	| 	Model Builiding/ADVISING WEEK	| 
+| 	Wednesday, March 30, 2022	| 	Model Builiding/ADVISING WEEK	| 
+| 	Friday, April 1, 2022	| 	QUIZ	| 
+| 	Monday, April 4, 2022	| 	regrssion	| 
+| 	Wednesday, April 6, 2022	| 	stepwise addition/deletion	| 
+| 	Friday, April 8, 2022	| 	QUIZ	| 
+| 	Monday, April 11, 2022	| 	logistic regression	| 
+| 	Wednesday, April 13, 2022	| 	trees & forests	| 
+| 	Friday, April 15, 2022	| 	Easter Holidays	| 
+| 	Monday, April 18, 2022	| 	Easter Holidays	| 
+| 	Wednesday, April 20, 2022	| 	Model Builiding	| 
+| 	Friday, April 22, 2022	| 	QUIZ	| 
+| 	Monday, April 25, 2022	| 	PRESENTATIONS	| 
+| 	Wednesday, April 27, 2022	| 	PRESENTATIONS	| 
+| 	Friday, April 29, 2022	| 	LAST DAY	| 
+| 	Monday, May 2, 2022	| 	Final Exam 8:30 p.m. – F period	| 
+
+
+
+## now
+
+|:-----|-----------|
+
+## now again
+
+|	:-----	|	|-----------|	
+| 	Monday, January 10, 2022	| 	Intro and A1 review	| 
+| 	Test 2 	| 	Test 2	| 
+
+## now again
+
+| 	Center	| 
+|-------:|:------|-----------|:-----
+| 	Date	| 
+| 	Monday, January 10, 2022	| 
+| 	Wednesday, January 12, 2022	| 
+| 	Friday, January 14, 2022	| 
+| 	Monday, January 17, 2022	| 
+| 	Wednesday, January 19, 2022	| 
+| 	Friday, January 21, 2022	| 
+| 	Monday, January 24, 2022	| 
+| 	Wednesday, January 26, 2022	| 
+| 	Friday, January 28, 2022	| 
+| 	Monday, January 31, 2022	| 
+| 	Wednesday, February 2, 2022	| 
+| 	Friday, February 4, 2022	| 
+| 	Monday, February 7, 2022	| 
+| 	Wednesday, February 9, 2022	| 
+| 	Friday, February 11, 2022	| 
+| 	Monday, February 14, 2022	| 
+| 	Wednesday, February 16, 2022	| 
+| 	Friday, February 18, 2022	| 
+| 	Monday, February 21, 2022	| 
+| 	Wednesday, February 23, 2022	| 
+| 	Friday, February 25, 2022	| 
+| 	Monday, February 28, 2022	| 
+| 	Wednesday, March 2, 2022	| 
+| 	Friday, March 4, 2022	| 
+| 	Monday, March 7, 2022	| 
+| 	Wednesday, March 9, 2022	| 
+| 	Friday, March 11, 2022	| 
+| 	Monday, March 14, 2022	| 
+| 	Wednesday, March 16, 2022	| 
+| 	Friday, March 18, 2022	| 
+| 	Monday, March 21, 2022	| 
+| 	Wednesday, March 23, 2022	| 
+| 	Friday, March 25, 2022	| 
+| 	Monday, March 28, 2022	| 
+| 	Wednesday, March 30, 2022	| 
+| 	Friday, April 1, 2022	| 
+| 	Monday, April 4, 2022	| 
+| 	Wednesday, April 6, 2022	| 
+| 	Friday, April 8, 2022	| 
+| 	Monday, April 11, 2022	| 
+| 	Wednesday, April 13, 2022	| 
+| 	Friday, April 15, 2022	| 
+| 	Monday, April 18, 2022	| 
+| 	Wednesday, April 20, 2022	| 
+| 	Friday, April 22, 2022	| 
+| 	Monday, April 25, 2022	| 
+| 	Wednesday, April 27, 2022	| 
+| 	Friday, April 29, 2022	| 
+| 	Monday, May 2, 2022	| 

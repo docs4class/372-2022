@@ -1,10 +1,7 @@
 fig:nice-fig
 tab:nice-tab
 eq:binom
-about
-usage
-render-book
-preview-book
+about-this-course
 syllabus
 course-objectives-and-learning-outcomes
 text-and-resources
@@ -20,6 +17,9 @@ honor-code-and-plagiarism
 first-generation-version
 continuing-advocate-version
 schedule
+now
+now-again
+now-again-1
 data-science-overview
 feel-good-about-analytics-1
 learning-goals
@@ -45,10 +45,10 @@ geoms
 geoms-1
 stat
 position
-about-1
-usage-1
-render-book-1
-preview-book-1
+about
+usage
+render-book
+preview-book
 hello-bookdown
 a-section
 cross
