@@ -20,9 +20,8 @@ schedule
 applied-analytics-overview
 feel-good-about-analytics-1
 learning-goals
-by-the-end-of-the-course-you-will-be-able-to
 toolkit-for-reproducibility
-resources-well-use
+resources-well-use-r4ds-mostly
 explore
 wrangle
 program

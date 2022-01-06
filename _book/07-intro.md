@@ -2,7 +2,12 @@
 
 **Analytics** is the systematic computational analysis of data or statistics.
 
+
+::: {.rmdnote}
+
 It is used for the discovery, interpretation, and communication of meaningful patterns in data. It also entails applying data patterns towards effective decision-making. 
+
+:::
 
 It can be valuable in areas rich with recorded information; analytics relies on the simultaneous application of statistics, computer programming and operations research to quantify performance.
 
@@ -22,18 +27,18 @@ Since analytics can require extensive computation (think: big data), the algorit
     + test & training data
     + measures of fit, confusion matrix
     
-[Data Science Model](https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png)
+
     
     
 ## Learning goals
 
-### By the end of the course, you will be able to...
+> By the end of the course, you will be able to...
 
-- gain insight from data
-- gain insight from data, reproducibly
-- gain insight from data, reproducibly, using modern programming tools and techniques
-- gain insight from data, reproducibly and collaboratively, using modern programming tools and techniques
-- commnucate insight from data
+::: {.rmdnote}
+
+[Data Science Model](https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png)
+
+:::
 
 ## Toolkit for reproducibility 
 
@@ -41,7 +46,7 @@ Since analytics can require extensive computation (think: big data), the algorit
 - Literate programming (code, narrative, output in one place) →  R Markdown
 - Version control →  Git / GitHub
 
-## Resources We'll Use
+## Resources We'll Use (R4DS, mostly)
 
 1)	Explore
 
@@ -108,8 +113,6 @@ By the end of the course, you will be able to...
 - gain insight from data, reproducibly, **using modern programming tools and techniques**
 - gain insight from data, reproducibly **and collaboratively**, using modern programming tools and techniques
 - gain insight from data, reproducibly **(with literate programming and version control)** and collaboratively, using modern programming tools and techniques
-
-
 
 # Reproducible data analysis
 
