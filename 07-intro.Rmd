@@ -1,4 +1,4 @@
-# Data Science Overview
+# Applied Analytics Overview
 
 **Analytics** is the systematic computational analysis of data or statistics.
 
@@ -22,6 +22,8 @@ Since analytics can require extensive computation (think: big data), the algorit
     + test & training data
     + measures of fit, confusion matrix
     
+[Data Science Model](https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png)
+    
     
 ## Learning goals
 
@@ -31,7 +33,7 @@ Since analytics can require extensive computation (think: big data), the algorit
 - gain insight from data, reproducibly
 - gain insight from data, reproducibly, using modern programming tools and techniques
 - gain insight from data, reproducibly and collaboratively, using modern programming tools and techniques
-- gain insight from data, reproducibly (with literate programming and version control) and collaboratively, using modern programming tools and techniques
+- commnucate insight from data
 
 ## Toolkit for reproducibility 
 

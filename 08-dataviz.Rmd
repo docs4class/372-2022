@@ -1,0 +1,216 @@
+# Data and visualisation
+
+```{r packages, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(magick)
+library(Tmisc)
+library(dsbox)
+```
+
+# What is in a dataset?
+
+
+## Dataset terminology
+
+- Each row is an **observation**
+- Each column is a **variable**
+
+
+```{r, out.width = "10%", fig.pos="p", echo=TRUE, fig.align = "center"}
+starwars
+```
+
+## What's in the Star Wars data?
+
+Take a `glimpse` at the data:
+
+```{r, r, out.width = "10%", fig.pos="p", echo=FALSE, fig.align = "center"}
+glimpse(starwars)
+```
+
+
+## Questions
+- How many rows and columns does this dataset have?
+- What does each row represent?
+- What does each column represent?
+
+## Questions
+```{r eval = FALSE}
+?starwars
+```
+
+##  How many rows and columns does this dataset have?
+
+```{r}
+nrow(starwars) # number of rows
+ncol(starwars) # number of columns
+dim(starwars)  # dimensions (row column)
+```
+
+# Exploratory data analysis
+
+  
+## What is EDA?
+  
+- Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics
+- Often, this is visual -- this is what we'll focus on first
+- But we might also calculate summary statistics and perform data wrangling/manipulation/transformation at (or before) this stage of the analysis -- this is what we'll focus on next
+
+## Mass vs. height
+  
+- How would you describe the relationship between mass and height of Starwars characters?
+- What other variables would help us understand data points that don't follow the overall trend?
+- Who is the not so tall but really chubby character?
+
+
+```{r fig.width = 8, warning = FALSE, echo=FALSE, out.width = "50%", fig.align = "center"}
+ggplot(data = starwars, mapping = aes(x = height, y = mass)) +
+  geom_point() +
+  labs(title = "Mass vs. height of Starwars characters",
+       x = "Height (cm)", y = "Weight (kg)") +
+  geom_point(data = starwars %>% filter(name == "Jabba Desilijic Tiure"), size = 5, pch = 1, color = "pink", stroke = 3)
+```
+
+## Jabba!
+# Data visualization
+
+
+## Data visualization
+
+> *"The simple graph has brought more information to the data analyst's mind than any other device." --- John Tukey*
+
+- Data visualization is the creation and study of the visual representation of data
+- Many tools for visualizing data -- R is one of them
+- Many approaches/systems within R for making data visualizations -- **ggplot2** is one of them, and that's what we're going to use
+
+## ggplot2 $\in$ tidyverse
+
+
+## ggplot2
+- **ggplot2** is tidyverse's data visualization package 
+- `gg` in "ggplot2" stands for Grammar of Graphics 
+- Inspired by the book **Grammar of Graphics** by Leland Wilkinson
+
+## Grammar of Graphics
+
+>  A grammar of graphics is a tool that enables us to concisely describe the components of a graphic
+
+
+
+
+## Mass vs. height
+
+```{r mass-height, fig.width = 8, out.width = "70%", fig.align = "center", message=FALSE}
+ggplot(data = starwars, mapping = aes(x = height, y = mass)) +
+  geom_point() +
+  labs(title = "Mass vs. height of Starwars characters",
+       x = "Height (cm)", y = "Weight (kg)")
+```
+
+## Questions 
+
+- What are the functions doing the plotting?
+- What is the dataset being plotted?
+- Which variables map to which features (aesthetics) of the plot?
+- What does the warning mean?<sup>+</sup>
+
+
+```{r ref.label="mass-height", fig.show = "hide"}
+```
+
+## Hello ggplot2!
+
+- `ggplot()` is the main function in ggplot2
+- Plots are constructed in layers
+- Structure of the code for plots can be summarized as
+
+```{r eval = FALSE, message=FALSE}
+ggplot(data = [dataset], 
+       mapping = aes(x = [x-variable], y = [y-variable])) +
+   geom_xxx() +
+   other options
+```
+
+- The ggplot2 package comes with the tidyverse
+
+```{r}
+library(tidyverse)
+```
+
+- For help with ggplot2, see [ggplot2.tidyverse.org](http://ggplot2.tidyverse.org/)
+
+# Why do we visualize?
+
+
+## Anscombe's quartet
+
+```{r, echo = FALSE}
+library(Tmisc)
+quartet
+```
+
+
+```{r, echo = FALSE}
+quartet[1:22,]
+```
+
+```{r, echo = FALSE}
+quartet[23:44,]
+```
+
+
+## Summarising Anscombe's quartet
+
+```{r, out.width = "10%", fig.pos="p", echo=TRUE, fig.align = "center", message=FALSE}
+quartet %>%
+  group_by(set) %>%
+  summarise(
+    mean_x = mean(x), 
+    mean_y = mean(y),
+    sd_x = sd(x),
+    sd_y = sd(y),
+    r = cor(x, y))
+```
+
+
+## Visualizing Anscombe's quartet
+
+```{r quartet-plot, echo = FALSE, out.width = "80%", fig.asp = 0.5,fig.align = "center"}
+ggplot(quartet, aes(x = x, y = y)) +
+  geom_point() +
+  facet_wrap(~ set, ncol = 4)
+```
+
+## About Anscombe's quartet
+
+> Anscombe's quartet comprises four data sets that have nearly identical simple descriptive statistics, yet have very different distributions and appear very different when graphed. Each dataset consists of eleven (x,y) points. They were constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers and other influential observations on statistical properties. He described the article as being intended to counter the impression among statisticians that "numerical calculations are exact, but graphs are *ROUGH*."
+
+
+## Age at first kiss
+
+- Do you see anything out of the ordinary?
+
+
+```{r echo = FALSE, warning = FALSE}
+ggplot(student_survey, aes(x = first_kiss)) +
+  geom_histogram(binwidth = 1) +
+  labs(
+    title = "How old were you when you had your first kiss?", 
+    x = "Age (years)", y = NULL
+    )
+```
+
+
+## Facebook visits
+
+- How are people reporting lower vs. higher values of FB visits?
+
+
+```{r echo = FALSE, warning = FALSE}
+ggplot(student_survey, aes(x = fb_visits_per_day)) +
+  geom_histogram(binwidth = 1) +
+  labs(
+    title = "How many times do you go on Facebook per day?", 
+    x = "Number of times", y = NULL
+    )
+```

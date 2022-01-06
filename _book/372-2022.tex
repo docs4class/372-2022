@@ -152,13 +152,17 @@ This book is updated automatically with any changes made to the documents during
 
 Also, this book has benefited greatly from lots of free, readily available resources posted on the web and we leverage these extensively. I would encourage you to review these resources in your analytics journey. Some that we specifically use with great frequency are these (and I say loud THANK YOU to the authors!):
 
-\begin{verbatim}
-R for Data Science
-An Introduction to Statistical Learning with Applications in R
-R: A self-learn tutorial
-Data Science in a Box
-stackoverflow.com, for example
-\end{verbatim}
+\begin{itemize}
+\tightlist
+\item
+  \href{https://r4ds.had.co.nz/}{R for Data Science}
+\item
+  \href{https://trevorhastie.github.io/ISLR/}{An Introduction to Statistical Learning with Applications in R}
+\item
+  \href{https://datasciencebox.org/}{Data Science in a Box}
+\item
+  \href{https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame?rq=1}{stackoverflow.com, for example}
+\end{itemize}
 
 \hypertarget{syllabus}{%
 \chapter{Syllabus}\label{syllabus}}
@@ -449,8 +453,8 @@ Monday, May 2, 2022 & & & \\
 \bottomrule
 \end{longtable}
 
-\hypertarget{data-science-overview}{%
-\chapter{Data Science Overview}\label{data-science-overview}}
+\hypertarget{applied-analytics-overview}{%
+\chapter{Applied Analytics Overview}\label{applied-analytics-overview}}
 
 \textbf{Analytics} is the systematic computational analysis of data or statistics.
 
@@ -489,6 +493,8 @@ Since analytics can require extensive computation (think: big data), the algorit
   \end{itemize}
 \end{itemize}
 
+\href{https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png}{Data Science Model}
+
 \hypertarget{learning-goals}{%
 \section{Learning goals}\label{learning-goals}}
 
@@ -506,7 +512,7 @@ Since analytics can require extensive computation (think: big data), the algorit
 \item
   gain insight from data, reproducibly and collaboratively, using modern programming tools and techniques
 \item
-  gain insight from data, reproducibly (with literate programming and version control) and collaboratively, using modern programming tools and techniques
+  commnucate insight from data
 \end{itemize}
 
 \hypertarget{toolkit-for-reproducibility}{%
@@ -773,6 +779,428 @@ Most stats take additional parameters to specify the details of statistical tran
 \section{position}\label{position}}
 
 The method used to adjusting overlapping objects, like jittering, stacking or dodging. More details in position.
+
+\hypertarget{data-and-visualisation}{%
+\chapter{Data and visualisation}\label{data-and-visualisation}}
+
+\hypertarget{what-is-in-a-dataset}{%
+\chapter{What is in a dataset?}\label{what-is-in-a-dataset}}
+
+\hypertarget{dataset-terminology}{%
+\section{Dataset terminology}\label{dataset-terminology}}
+
+\begin{itemize}
+\tightlist
+\item
+  Each row is an \textbf{observation}
+\item
+  Each column is a \textbf{variable}
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{starwars}
+\CommentTok{\#\textgreater{} \# A tibble: 87 x 14}
+\CommentTok{\#\textgreater{}    name        height  mass hair\_color  skin\_color eye\_color}
+\CommentTok{\#\textgreater{}    \textless{}chr\textgreater{}        \textless{}int\textgreater{} \textless{}dbl\textgreater{} \textless{}chr\textgreater{}       \textless{}chr\textgreater{}      \textless{}chr\textgreater{}    }
+\CommentTok{\#\textgreater{}  1 Luke Skywa\textasciitilde{}    172    77 blond       fair       blue     }
+\CommentTok{\#\textgreater{}  2 C{-}3PO          167    75 \textless{}NA\textgreater{}        gold       yellow   }
+\CommentTok{\#\textgreater{}  3 R2{-}D2           96    32 \textless{}NA\textgreater{}        white, bl\textasciitilde{} red      }
+\CommentTok{\#\textgreater{}  4 Darth Vader    202   136 none        white      yellow   }
+\CommentTok{\#\textgreater{}  5 Leia Organa    150    49 brown       light      brown    }
+\CommentTok{\#\textgreater{}  6 Owen Lars      178   120 brown, grey light      blue     }
+\CommentTok{\#\textgreater{}  7 Beru White\textasciitilde{}    165    75 brown       light      blue     }
+\CommentTok{\#\textgreater{}  8 R5{-}D4           97    32 \textless{}NA\textgreater{}        white, red red      }
+\CommentTok{\#\textgreater{}  9 Biggs Dark\textasciitilde{}    183    84 black       light      brown    }
+\CommentTok{\#\textgreater{} 10 Obi{-}Wan Ke\textasciitilde{}    182    77 auburn, wh\textasciitilde{} fair       blue{-}gray}
+\CommentTok{\#\textgreater{} \# ... with 77 more rows, and 8 more variables:}
+\CommentTok{\#\textgreater{} \#   birth\_year \textless{}dbl\textgreater{}, sex \textless{}chr\textgreater{}, gender \textless{}chr\textgreater{},}
+\CommentTok{\#\textgreater{} \#   homeworld \textless{}chr\textgreater{}, species \textless{}chr\textgreater{}, films \textless{}list\textgreater{},}
+\CommentTok{\#\textgreater{} \#   vehicles \textless{}list\textgreater{}, starships \textless{}list\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{whats-in-the-star-wars-data}{%
+\section{What's in the Star Wars data?}\label{whats-in-the-star-wars-data}}
+
+Take a \texttt{glimpse} at the data:
+
+\begin{verbatim}
+#> Rows: 87
+#> Columns: 14
+#> $ name       <chr> "Luke Skywalker", "C-3PO", "R2-D2", "Da~
+#> $ height     <int> 172, 167, 96, 202, 150, 178, 165, 97, 1~
+#> $ mass       <dbl> 77, 75, 32, 136, 49, 120, 75, 32, 84, 7~
+#> $ hair_color <chr> "blond", NA, NA, "none", "brown", "brow~
+#> $ skin_color <chr> "fair", "gold", "white, blue", "white",~
+#> $ eye_color  <chr> "blue", "yellow", "red", "yellow", "bro~
+#> $ birth_year <dbl> 19.0, 112.0, 33.0, 41.9, 19.0, 52.0, 47~
+#> $ sex        <chr> "male", "none", "none", "male", "female~
+#> $ gender     <chr> "masculine", "masculine", "masculine", ~
+#> $ homeworld  <chr> "Tatooine", "Tatooine", "Naboo", "Tatoo~
+#> $ species    <chr> "Human", "Droid", "Droid", "Human", "Hu~
+#> $ films      <list> <"The Empire Strikes Back", "Revenge o~
+#> $ vehicles   <list> <"Snowspeeder", "Imperial Speeder Bike~
+#> $ starships  <list> <"X-wing", "Imperial shuttle">, <>, <>~
+\end{verbatim}
+
+\hypertarget{questions}{%
+\section{Questions}\label{questions}}
+
+\begin{itemize}
+\tightlist
+\item
+  How many rows and columns does this dataset have?
+\item
+  What does each row represent?
+\item
+  What does each column represent?
+\end{itemize}
+
+\hypertarget{questions-1}{%
+\section{Questions}\label{questions-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?starwars}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{how-many-rows-and-columns-does-this-dataset-have}{%
+\section{How many rows and columns does this dataset have?}\label{how-many-rows-and-columns-does-this-dataset-have}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{nrow}\NormalTok{(starwars) }\CommentTok{\# number of rows}
+\CommentTok{\#\textgreater{} [1] 87}
+\FunctionTok{ncol}\NormalTok{(starwars) }\CommentTok{\# number of columns}
+\CommentTok{\#\textgreater{} [1] 14}
+\FunctionTok{dim}\NormalTok{(starwars)  }\CommentTok{\# dimensions (row column)}
+\CommentTok{\#\textgreater{} [1] 87 14}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{exploratory-data-analysis}{%
+\chapter{Exploratory data analysis}\label{exploratory-data-analysis}}
+
+\hypertarget{what-is-eda}{%
+\section{What is EDA?}\label{what-is-eda}}
+
+\begin{itemize}
+\tightlist
+\item
+  Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics
+\item
+  Often, this is visual -- this is what we'll focus on first
+\item
+  But we might also calculate summary statistics and perform data wrangling/manipulation/transformation at (or before) this stage of the analysis -- this is what we'll focus on next
+\end{itemize}
+
+\hypertarget{mass-vs.-height}{%
+\section{Mass vs.~height}\label{mass-vs.-height}}
+
+\begin{itemize}
+\tightlist
+\item
+  How would you describe the relationship between mass and height of Starwars characters?
+\item
+  What other variables would help us understand data points that don't follow the overall trend?
+\item
+  Who is the not so tall but really chubby character?
+\end{itemize}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{08-dataviz_files/figure-latex/unnamed-chunk-4-1} \end{center}
+
+\hypertarget{jabba}{%
+\section{Jabba!}\label{jabba}}
+
+\hypertarget{data-visualization}{%
+\chapter{Data visualization}\label{data-visualization}}
+
+\hypertarget{data-visualization-1}{%
+\section{Data visualization}\label{data-visualization-1}}
+
+\begin{quote}
+\emph{``The simple graph has brought more information to the data analyst's mind than any other device.'' --- John Tukey}
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  Data visualization is the creation and study of the visual representation of data
+\item
+  Many tools for visualizing data -- R is one of them
+\item
+  Many approaches/systems within R for making data visualizations -- \textbf{ggplot2} is one of them, and that's what we're going to use
+\end{itemize}
+
+\hypertarget{ggplot2-in-tidyverse}{%
+\section{\texorpdfstring{ggplot2 \(\in\) tidyverse}{ggplot2 \textbackslash in tidyverse}}\label{ggplot2-in-tidyverse}}
+
+\hypertarget{ggplot2}{%
+\section{ggplot2}\label{ggplot2}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{ggplot2} is tidyverse's data visualization package
+\item
+  \texttt{gg} in ``ggplot2'' stands for Grammar of Graphics
+\item
+  Inspired by the book \textbf{Grammar of Graphics} by Leland Wilkinson
+\end{itemize}
+
+\hypertarget{grammar-of-graphics}{%
+\section{Grammar of Graphics}\label{grammar-of-graphics}}
+
+\begin{quote}
+A grammar of graphics is a tool that enables us to concisely describe the components of a graphic
+\end{quote}
+
+\hypertarget{mass-vs.-height-1}{%
+\section{Mass vs.~height}\label{mass-vs.-height-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ starwars, }\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ height, }\AttributeTok{y =}\NormalTok{ mass)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Mass vs. height of Starwars characters"}\NormalTok{,}
+       \AttributeTok{x =} \StringTok{"Height (cm)"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Weight (kg)"}\NormalTok{)}
+\CommentTok{\#\textgreater{} Warning: Removed 28 rows containing missing values}
+\CommentTok{\#\textgreater{} (geom\_point).}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\includegraphics[width=0.7\linewidth]{08-dataviz_files/figure-latex/mass-height-1} \end{center}
+
+\hypertarget{questions-2}{%
+\section{Questions}\label{questions-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  What are the functions doing the plotting?
+\item
+  What is the dataset being plotted?
+\item
+  Which variables map to which features (aesthetics) of the plot?
+\item
+  What does the warning mean?+
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ starwars, }\AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ height, }\AttributeTok{y =}\NormalTok{ mass)) }\SpecialCharTok{+}
+  \FunctionTok{geom\_point}\NormalTok{() }\SpecialCharTok{+}
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{title =} \StringTok{"Mass vs. height of Starwars characters"}\NormalTok{,}
+       \AttributeTok{x =} \StringTok{"Height (cm)"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Weight (kg)"}\NormalTok{)}
+\CommentTok{\#\textgreater{} Warning: Removed 28 rows containing missing values}
+\CommentTok{\#\textgreater{} (geom\_point).}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{hello-ggplot2}{%
+\section{Hello ggplot2!}\label{hello-ggplot2}}
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{ggplot()} is the main function in ggplot2
+\item
+  Plots are constructed in layers
+\item
+  Structure of the code for plots can be summarized as
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(}\AttributeTok{data =}\NormalTok{ [dataset], }
+       \AttributeTok{mapping =} \FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ [x}\SpecialCharTok{{-}}\NormalTok{variable], }\AttributeTok{y =}\NormalTok{ [y}\SpecialCharTok{{-}}\NormalTok{variable])) }\SpecialCharTok{+}
+   \FunctionTok{geom\_xxx}\NormalTok{() }\SpecialCharTok{+}
+\NormalTok{   other options}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  The ggplot2 package comes with the tidyverse
+\end{itemize}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{itemize}
+\tightlist
+\item
+  For help with ggplot2, see \href{http://ggplot2.tidyverse.org/}{ggplot2.tidyverse.org}
+\end{itemize}
+
+\hypertarget{why-do-we-visualize}{%
+\chapter{Why do we visualize?}\label{why-do-we-visualize}}
+
+\hypertarget{anscombes-quartet}{%
+\section{Anscombe's quartet}\label{anscombes-quartet}}
+
+\begin{verbatim}
+#>    set  x     y
+#> 1    I 10  8.04
+#> 2    I  8  6.95
+#> 3    I 13  7.58
+#> 4    I  9  8.81
+#> 5    I 11  8.33
+#> 6    I 14  9.96
+#> 7    I  6  7.24
+#> 8    I  4  4.26
+#> 9    I 12 10.84
+#> 10   I  7  4.82
+#> 11   I  5  5.68
+#> 12  II 10  9.14
+#> 13  II  8  8.14
+#> 14  II 13  8.74
+#> 15  II  9  8.77
+#> 16  II 11  9.26
+#> 17  II 14  8.10
+#> 18  II  6  6.13
+#> 19  II  4  3.10
+#> 20  II 12  9.13
+#> 21  II  7  7.26
+#> 22  II  5  4.74
+#> 23 III 10  7.46
+#> 24 III  8  6.77
+#> 25 III 13 12.74
+#> 26 III  9  7.11
+#> 27 III 11  7.81
+#> 28 III 14  8.84
+#> 29 III  6  6.08
+#> 30 III  4  5.39
+#> 31 III 12  8.15
+#> 32 III  7  6.42
+#> 33 III  5  5.73
+#> 34  IV  8  6.58
+#> 35  IV  8  5.76
+#> 36  IV  8  7.71
+#> 37  IV  8  8.84
+#> 38  IV  8  8.47
+#> 39  IV  8  7.04
+#> 40  IV  8  5.25
+#> 41  IV 19 12.50
+#> 42  IV  8  5.56
+#> 43  IV  8  7.91
+#> 44  IV  8  6.89
+\end{verbatim}
+
+\begin{verbatim}
+#>    set  x     y
+#> 1    I 10  8.04
+#> 2    I  8  6.95
+#> 3    I 13  7.58
+#> 4    I  9  8.81
+#> 5    I 11  8.33
+#> 6    I 14  9.96
+#> 7    I  6  7.24
+#> 8    I  4  4.26
+#> 9    I 12 10.84
+#> 10   I  7  4.82
+#> 11   I  5  5.68
+#> 12  II 10  9.14
+#> 13  II  8  8.14
+#> 14  II 13  8.74
+#> 15  II  9  8.77
+#> 16  II 11  9.26
+#> 17  II 14  8.10
+#> 18  II  6  6.13
+#> 19  II  4  3.10
+#> 20  II 12  9.13
+#> 21  II  7  7.26
+#> 22  II  5  4.74
+\end{verbatim}
+
+\begin{verbatim}
+#>    set  x     y
+#> 23 III 10  7.46
+#> 24 III  8  6.77
+#> 25 III 13 12.74
+#> 26 III  9  7.11
+#> 27 III 11  7.81
+#> 28 III 14  8.84
+#> 29 III  6  6.08
+#> 30 III  4  5.39
+#> 31 III 12  8.15
+#> 32 III  7  6.42
+#> 33 III  5  5.73
+#> 34  IV  8  6.58
+#> 35  IV  8  5.76
+#> 36  IV  8  7.71
+#> 37  IV  8  8.84
+#> 38  IV  8  8.47
+#> 39  IV  8  7.04
+#> 40  IV  8  5.25
+#> 41  IV 19 12.50
+#> 42  IV  8  5.56
+#> 43  IV  8  7.91
+#> 44  IV  8  6.89
+\end{verbatim}
+
+\hypertarget{summarising-anscombes-quartet}{%
+\section{Summarising Anscombe's quartet}\label{summarising-anscombes-quartet}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{quartet }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{group\_by}\NormalTok{(set) }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{summarise}\NormalTok{(}
+    \AttributeTok{mean\_x =} \FunctionTok{mean}\NormalTok{(x), }
+    \AttributeTok{mean\_y =} \FunctionTok{mean}\NormalTok{(y),}
+    \AttributeTok{sd\_x =} \FunctionTok{sd}\NormalTok{(x),}
+    \AttributeTok{sd\_y =} \FunctionTok{sd}\NormalTok{(y),}
+    \AttributeTok{r =} \FunctionTok{cor}\NormalTok{(x, y))}
+\CommentTok{\#\textgreater{} \# A tibble: 4 x 6}
+\CommentTok{\#\textgreater{}   set   mean\_x mean\_y  sd\_x  sd\_y     r}
+\CommentTok{\#\textgreater{}   \textless{}fct\textgreater{}  \textless{}dbl\textgreater{}  \textless{}dbl\textgreater{} \textless{}dbl\textgreater{} \textless{}dbl\textgreater{} \textless{}dbl\textgreater{}}
+\CommentTok{\#\textgreater{} 1 I          9   7.50  3.32  2.03 0.816}
+\CommentTok{\#\textgreater{} 2 II         9   7.50  3.32  2.03 0.816}
+\CommentTok{\#\textgreater{} 3 III        9   7.5   3.32  2.03 0.816}
+\CommentTok{\#\textgreater{} 4 IV         9   7.50  3.32  2.03 0.817}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{visualizing-anscombes-quartet}{%
+\section{Visualizing Anscombe's quartet}\label{visualizing-anscombes-quartet}}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{08-dataviz_files/figure-latex/quartet-plot-1} \end{center}
+
+\hypertarget{about-anscombes-quartet}{%
+\section{About Anscombe's quartet}\label{about-anscombes-quartet}}
+
+\begin{quote}
+Anscombe's quartet comprises four data sets that have nearly identical simple descriptive statistics, yet have very different distributions and appear very different when graphed. Each dataset consists of eleven (x,y) points. They were constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers and other influential observations on statistical properties. He described the article as being intended to counter the impression among statisticians that ``numerical calculations are exact, but graphs are \emph{ROUGH}.''
+\end{quote}
+
+\hypertarget{age-at-first-kiss}{%
+\section{Age at first kiss}\label{age-at-first-kiss}}
+
+\begin{itemize}
+\tightlist
+\item
+  Do you see anything out of the ordinary?
+\end{itemize}
+
+\includegraphics{08-dataviz_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+\hypertarget{facebook-visits}{%
+\section{Facebook visits}\label{facebook-visits}}
+
+\begin{itemize}
+\tightlist
+\item
+  How are people reporting lower vs.~higher values of FB visits?
+\end{itemize}
+
+\includegraphics{08-dataviz_files/figure-latex/unnamed-chunk-13-1.pdf}
 
 \hypertarget{about}{%
 \chapter{About}\label{about}}

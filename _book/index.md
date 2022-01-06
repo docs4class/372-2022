@@ -22,11 +22,10 @@ This book is updated automatically with any changes made to the documents during
 
 Also, this book has benefited greatly from lots of free, readily available resources posted on the web and we leverage these extensively. I would encourage you to review these resources in your analytics journey. Some that we specifically use with great frequency are these (and I say loud THANK YOU to the authors!):
 
-    R for Data Science
-    An Introduction to Statistical Learning with Applications in R
-    R: A self-learn tutorial
-    Data Science in a Box
-    stackoverflow.com, for example
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [An Introduction to Statistical Learning with Applications in R](https://trevorhastie.github.io/ISLR/)
+- [Data Science in a Box](https://datasciencebox.org/)
+- [stackoverflow.com, for example](https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame?rq=1)
 
 
 
