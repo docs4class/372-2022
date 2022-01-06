@@ -2,7 +2,6 @@ fig:nice-fig
 tab:nice-tab
 eq:binom
 about-this-course
-figures-please
 syllabus
 course-objectives-and-learning-outcomes
 text-and-resources
@@ -17,6 +16,7 @@ accommodations
 honor-code-and-plagiarism
 first-generation-version
 continuing-advocate-version
+the-class-routine
 schedule
 applied-analytics-overview
 feel-good-about-analytics-1
@@ -116,4 +116,3 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
-url-your-book-url-like-httpsbookdown.orgyihuibookdown

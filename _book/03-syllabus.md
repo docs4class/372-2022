@@ -41,12 +41,13 @@ This course will be focused on both understanding and applying key business anal
 Exams will cover assigned chapters in the textbook, other assigned readings, lectures, class exercises, class discussions, videos, and guest speakers. I will typically allocate time prior to each exam to clearly identify the body of knowledge each test will cover and to answer questions about the format and objectives of the exam.
 
 
-### Quizzes -- **DON"T MISS CLASS**
+### Quizzes -- **DON'T MISS CLASS**
 - The average of all quizzes and assignments will comprise the Quizzes and Assignments - 40% portion of your final grade
 - Quizzes and Assignments are designed to prepare you for your exams and to ensure you stay up with the course material
 - **Missed Quizzes and Assignments cannot be made up later.  Be present.**  
 
 Quizzes rule.  **LISTEN.**
+- **Missed Quizzes and Assignments cannot be made up later.  Be present.**  
 
 ### Final Average
 
@@ -94,4 +95,14 @@ I am a Presby First+ Advocate. I am here to support our current first-generation
 I am a Presby First+ Advocate. I am committed to supporting first-generation students at Presbyterian College. At Presbyterian College, first-generation students are those in which neither parent nor legal guardian graduated from a four-year higher education institution with a bachelor's degree. If you are a first-generation college student, please contact me anytime or visit me during my office hours. For more information about support for first-generation college students on our campus visit our Presby First+ webpage.
 
 
+# The class routine
 
+::: {.rmdnote}
+
+**Monday:** Wrap up previous topic and introduce what you've pre-read about.  Chat.  Play.  Work some examples.
+
+**Wednesday:**  Work more examples.  Chat as needed.  Live our best lives.  :).  
+
+**Friday:** Apply what we learned -- demonstrate your mastery.  Rinse.  Repeat.
+
+:::
