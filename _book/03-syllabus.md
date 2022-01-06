@@ -10,27 +10,30 @@ This course is designed to introduce to data science.  Students will apply stati
 
 At the end of this course students should be able to:
 
-- Demonstrate mastery of the statistical software in R and the Rstudio IDE.
-- Data wrangle (the process of cleaning and unifying messy and complex data sets for easy access and analysis)
-- Demonstrate mastery of single and multiple regression.
-- Demonstrate mastery of these dplyr functions: filter, select, mutate, group_by, summaize, and tally.
-- Demonstrate mastery of how business analytics is related to other business functions and is important to the success of the business entity.
+By the end of the course, you will be able to…
+- gain insight from data
+- gain insight from data, reproducibly
+- gain insight from data, reproducibly, using modern programming tools and techniques
+- gain insight from data, reproducibly and collaboratively, using modern programming tools and techniques
+- gain insight from data, reproducibly (with literate programming and version control) and collaboratively, using modern programming tools and techniques
+- communicate results effectively 
 
 This course will be focused on both understanding and applying key business analytical concepts. Although the text serves as a useful foundation for the concepts covered in the class, simple memorization of the material in the text will not be sufficient. Class participation, discussion, and application are critical.
 
 ## Text and Resources
 
-- The course website (primary reource)
-- An Introduction to Statistical Learning with Applications in R; by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani
-- R: A self-learn tutorial.
+- This course website (primary resource)
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [An Introduction to Statistical Learning with Applications in R](https://trevorhastie.github.io/ISLR/)
+- [Data Science in a Box](https://datasciencebox.org/)
+- [stackoverflow.com, for example](https://stackoverflow.com/questions/4862178/remove-rows-with-all-or-some-nas-missing-values-in-data-frame?rq=1)
 - Other free, publicly available datasets and publications.
 
 ## Performance Evaluation (Grading)
 
-- Quizzes and Assignments - 20%
+- Quizzes and Assignments - 40%
 - Exam 1 - 20%
 - Exam 2 - 20%
-- Exam 3 - 20%
 - Final Exam - 20%
 
 ### Exams
