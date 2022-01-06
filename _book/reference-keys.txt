@@ -17,9 +17,6 @@ honor-code-and-plagiarism
 first-generation-version
 continuing-advocate-version
 schedule
-now
-now-again
-now-again-1
 applied-analytics-overview
 feel-good-about-analytics-1
 learning-goals

@@ -42,9 +42,9 @@ Exams will cover assigned chapters in the textbook, other assigned readings, lec
 
 
 ### Quizzes -- **DON"T MISS CLASS**
-- The average of all quizzes and assignments will comprise the Quizzes and Assignments - 20% portion of your final grade
-- Quizzes are designed to prepare you for your exams and to ensure you stay up wiht the course material
-- Missed quizzes cannot be made up later.  Be present.  
+- The average of all quizzes and assignments will comprise the Quizzes and Assignments - 40% portion of your final grade
+- Quizzes and Assignments are designed to prepare you for your exams and to ensure you stay up with the course material
+- **Missed Quizzes and Assignments cannot be made up later.  Be present.**  
 
 Quizzes rule.  **LISTEN.**
 
