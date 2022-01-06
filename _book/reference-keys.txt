@@ -2,6 +2,7 @@ fig:nice-fig
 tab:nice-tab
 eq:binom
 about-this-course
+figures-please
 syllabus
 course-objectives-and-learning-outcomes
 text-and-resources
@@ -115,3 +116,4 @@ sharing-your-book
 publishing
 pages
 metadata-for-sharing
+url-your-book-url-like-httpsbookdown.orgyihuibookdown
