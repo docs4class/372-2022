@@ -443,6 +443,7 @@ By the end of the course, you will be able to\ldots{}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi})}
+\tightlist
 \item
   Explore
 \item
@@ -458,99 +459,50 @@ By the end of the course, you will be able to\ldots{}
 \hypertarget{explore}{%
 \section{Explore}\label{explore}}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  3 Data visualisation
-\item
-  4 Workflow: basics
-\item
-  5 Data transformation
-\item
-  6 Workflow: scripts
-\item
-  7 Exploratory Data Analysis
-\item
-  8 Workflow: projects
-\end{enumerate}
+3 Data visualisation
+4 Workflow: basics
+5 Data transformation
+6 Workflow: scripts
+7 Exploratory Data Analysis
+8 Workflow: projects
 
 \hypertarget{wrangle}{%
 \section{Wrangle}\label{wrangle}}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\tightlist
-\item
-  9 Introduction
-\item
-  10 Tibbles
-\item
-  11 Data import
-\item
-  12 Tidy data
-\item
-  13 Relational data
-\item
-  14 Strings
-\item
-  15 Factors
-\item
-  16 Dates and times
-\end{enumerate}
+9 Introduction
+10 Tibbles
+11 Data import
+12 Tidy data
+13 Relational data
+14 Strings
+15 Factors
+16 Dates and times
 
 \hypertarget{program}{%
 \section{Program}\label{program}}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\tightlist
-\item
-  17 Introduction
-\item
-  18 Pipes
-\item
-  19 Functions
-\item
-  20 Vectors
-\item
-  21 Iteration
-\end{enumerate}
+17 Introduction
+18 Pipes
+19 Functions
+20 Vectors
+21 Iteration
 
 \hypertarget{model}{%
 \section{Model}\label{model}}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\tightlist
-\item
-  22 Introduction
-\item
-  23 Model basics
-\item
-  24 Model building
-\item
-  25 Many models
-\end{enumerate}
+22 Introduction
+23 Model basics
+24 Model building
+25 Many models
 
 \hypertarget{communicate}{%
 \section{Communicate}\label{communicate}}
 
-\begin{enumerate}
-\def\labelenumi{\alph{enumi})}
-\tightlist
-\item
-  26 Introduction
-\item
-  27 R Markdown
-\item
-  28 Graphics for communication
-\item
-  29 R Markdown formats
-\item
-  30 R Markdown workflow
-\end{enumerate}
+26 Introduction
+27 R Markdown
+28 Graphics for communication
+29 R Markdown formats
+30 R Markdown workflow
 
 \hypertarget{learning-goals-1}{%
 \section{Learning goals}\label{learning-goals-1}}
@@ -570,125 +522,6 @@ By the end of the course, you will be able to\ldots{}
 \item
   gain insight from data, reproducibly \textbf{(with literate programming and version control)} and collaboratively, using modern programming tools and techniques
 \end{itemize}
-
-\hypertarget{reproducible-data-analysis}{%
-\chapter{Reproducible data analysis}\label{reproducible-data-analysis}}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{reproducibility-checklist}{%
-\section{Reproducibility checklist}\label{reproducibility-checklist}}
-
-\hypertarget{near-term-goals}{%
-\subsection{Near-term goals:}\label{near-term-goals}}
-
-\begin{itemize}
-\tightlist
-\item
-  Are the tables and figures reproducible from the code and data?
-\item
-  Does the code actually do what you think it does?
-\item
-  In addition to what was done, is it clear \emph{why} it was done?
-\end{itemize}
-
-\hypertarget{long-term-goals}{%
-\subsection{Long-term goals:}\label{long-term-goals}}
-
-\begin{itemize}
-\tightlist
-\item
-  Can the code be used for other data?
-\item
-  Can you extend the code to do other things?
-\end{itemize}
-
-\hypertarget{for-next-class}{%
-\section{For next class}\label{for-next-class}}
-
-\begin{itemize}
-\tightlist
-\item
-  Flip (or tab!) through R4DS and be able to answer (I \textbf{WILL} call on you next class) broadly-speaking what each chapter of the book covers
-\item
-  Pay particular attention to the visualization chapter and be able to answer (I \textbf{WILL} call on you next class) what these terms refer to:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    mapping
-  \item
-    data
-  \item
-    geom
-  \item
-    stat
-  \item
-    position
-  \end{itemize}
-\end{itemize}
-
-\hypertarget{ggplot2-components}{%
-\section{ggplot2 components}\label{ggplot2-components}}
-
-\hypertarget{quiz-next-class}{%
-\section{Quiz Next Class}\label{quiz-next-class}}
-
-\begin{itemize}
-\tightlist
-\item
-  Quiz: explain:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    mapping
-  \item
-    data
-  \item
-    geom
-  \item
-    stat
-  \item
-    position
-  \end{itemize}
-\end{itemize}
-
-\href{https://rpubs.com/hadley/ggplot2-layers}{link}
-
-\hypertarget{mapping}{%
-\section{mapping}\label{mapping}}
-
-A set of aesthetic mappings, specified using the aes() function and combined with the plot defaults as described in aesthetic mappings. If NULL, uses the default mapping set in ggplot().
-
-\hypertarget{data}{%
-\section{data}\label{data}}
-
-A dataset which overrides the default plot dataset. It is usually omitted (set to NULL), in which case the layer will use the default data specified in ggplot(). The requirements for data are explained in more detail in data.
-
-\hypertarget{geoms}{%
-\section{Geoms}\label{geoms}}
-
-The name of the geometric object to use to draw each observation. Geoms are discussed in more detail in geom, and the toolbox explores their use in more depth.
-
-\hypertarget{geoms-1}{%
-\section{Geoms}\label{geoms-1}}
-
-can have additional arguments. All geoms take aesthetics as parameters. If you supply an aesthetic (e.g.~colour) as a parameter, it will not be scaled, allowing you to control the appearance of the plot, as described in setting vs.~mapping. You can pass params in \ldots{} (in which case stat and geom parameters are automatically teased apart), or in a list passed to geom\_params.
-
-\hypertarget{stat}{%
-\section{stat}\label{stat}}
-
-The name of the statistical tranformation to use. A statistical transformation performs some useful statistical summary is key to histograms and smoothes. To keep the data as is, use the ``identity'' stat. Learn more in statistical transformations.
-
-You only need to set one of stat and geom: every geom has a default stat, and every stat a default geom.
-
-Most stats take additional parameters to specify the details of statistical transformation. You can supply params either in \ldots{} (in which case stat and geom parameters are automatically teased apart), or in a list called stat\_params.
-
-\hypertarget{position}{%
-\section{position}\label{position}}
-
-The method used to adjusting overlapping objects, like jittering, stacking or dodging. More details in position.
 
 \hypertarget{data-and-visualisation}{%
 \chapter{Data and visualisation}\label{data-and-visualisation}}
@@ -1111,6 +944,132 @@ Anscombe's quartet comprises four data sets that have nearly identical simple de
 \end{itemize}
 
 \includegraphics{08-dataviz_files/figure-latex/unnamed-chunk-13-1.pdf}
+
+\hypertarget{reproducible-data-analysis}{%
+\chapter{Reproducible data analysis}\label{reproducible-data-analysis}}
+
+What is reproducible research? Wy is it important?
+
+\begin{quote}
+Reproducible research is the idea that data analyses, and more generally, scientific claims, are published with their data and software code so that others may verify the findings and build upon them. The need for reproducibility is increasing dramatically as data analyses become more complex, involving larger datasets and more sophisticated computations. Reproducibility allows for people to focus on the actual content of a data analysis, rather than on superficial details reported in a written summary. In addition, reproducibility makes an analysis more useful to others because the data and code that actually conducted the analysis are available. This course will focus on literate statistical analysis tools which allow one to publish data analyses in a single document that allows others to easily execute the same analysis to obtain the same results.
+\end{quote}
+
+\hypertarget{reproducibility-checklist}{%
+\section{Reproducibility checklist}\label{reproducibility-checklist}}
+
+\hypertarget{near-term-goals}{%
+\subsection{Near-term goals:}\label{near-term-goals}}
+
+\begin{itemize}
+\tightlist
+\item
+  Are the tables and figures reproducible from the code and data?
+\item
+  Does the code actually do what you think it does?
+\item
+  In addition to what was done, is it clear \emph{why} it was done?
+\end{itemize}
+
+\hypertarget{long-term-goals}{%
+\subsection{Long-term goals:}\label{long-term-goals}}
+
+\begin{itemize}
+\tightlist
+\item
+  Can the code be used for other data?
+\item
+  Can you extend the code to do other things?
+\end{itemize}
+
+\hypertarget{ggplot}{%
+\section{ggplot}\label{ggplot}}
+
+\hypertarget{for-next-class}{%
+\section{For next class}\label{for-next-class}}
+
+\begin{itemize}
+\tightlist
+\item
+  Flip (or tab!) through R4DS and be able to answer (I \textbf{WILL} call on you next class) broadly-speaking what each chapter of the book covers
+\item
+  Pay particular attention to the visualization chapter and be able to answer (I \textbf{WILL} call on you next class) what these terms refer to:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    mapping
+  \item
+    data
+  \item
+    geom
+  \item
+    stat
+  \item
+    position
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{ggplot2-components}{%
+\section{ggplot2 components}\label{ggplot2-components}}
+
+\hypertarget{quiz-next-class}{%
+\section{Quiz Next Class}\label{quiz-next-class}}
+
+\begin{itemize}
+\tightlist
+\item
+  Quiz: explain:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    mapping
+  \item
+    data
+  \item
+    geom
+  \item
+    stat
+  \item
+    position
+  \end{itemize}
+\end{itemize}
+
+\href{https://rpubs.com/hadley/ggplot2-layers}{link}
+
+\hypertarget{mapping}{%
+\section{mapping}\label{mapping}}
+
+A set of aesthetic mappings, specified using the aes() function and combined with the plot defaults as described in aesthetic mappings. If NULL, uses the default mapping set in ggplot().
+
+\hypertarget{data}{%
+\section{data}\label{data}}
+
+A dataset which overrides the default plot dataset. It is usually omitted (set to NULL), in which case the layer will use the default data specified in ggplot(). The requirements for data are explained in more detail in data.
+
+\hypertarget{geoms}{%
+\section{Geoms}\label{geoms}}
+
+The name of the geometric object to use to draw each observation. Geoms are discussed in more detail in geom, and the toolbox explores their use in more depth.
+
+\hypertarget{geoms-1}{%
+\section{Geoms}\label{geoms-1}}
+
+can have additional arguments. All geoms take aesthetics as parameters. If you supply an aesthetic (e.g.~colour) as a parameter, it will not be scaled, allowing you to control the appearance of the plot, as described in setting vs.~mapping. You can pass params in \ldots{} (in which case stat and geom parameters are automatically teased apart), or in a list passed to geom\_params.
+
+\hypertarget{stat}{%
+\section{stat}\label{stat}}
+
+The name of the statistical tranformation to use. A statistical transformation performs some useful statistical summary is key to histograms and smoothes. To keep the data as is, use the ``identity'' stat. Learn more in statistical transformations.
+
+You only need to set one of stat and geom: every geom has a default stat, and every stat a default geom.
+
+Most stats take additional parameters to specify the details of statistical transformation. You can supply params either in \ldots{} (in which case stat and geom parameters are automatically teased apart), or in a list called stat\_params.
+
+\hypertarget{position}{%
+\section{position}\label{position}}
+
+The method used to adjusting overlapping objects, like jittering, stacking or dodging. More details in position.
 
 \hypertarget{about}{%
 \chapter{About}\label{about}}
