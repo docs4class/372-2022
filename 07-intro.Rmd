@@ -17,7 +17,7 @@ Specifically, areas within analytics include predictive analytics, prescriptive 
 
 Since analytics can require extensive computation (think: big data), the algorithms and software used for analytics harness the most current methods in computer science, statistics, and mathematics.
 
-##  Feel good about Analytics 1?
+# Analytics 1 -- Feel Good About It?
 
 - R basics
 - Data wrangling
@@ -28,8 +28,6 @@ Since analytics can require extensive computation (think: big data), the algorit
     + measures of fit, confusion matrix
     
 
-    
-    
 ## Learning goals
 
 > By the end of the course, you will be able to...
@@ -107,3 +105,19 @@ By the end of the course, you will be able to...
 - gain insight from data, reproducibly, **using modern programming tools and techniques**
 - gain insight from data, reproducibly **and collaboratively**, using modern programming tools and techniques
 - gain insight from data, reproducibly **(with literate programming and version control)** and collaboratively, using modern programming tools and techniques
+
+# Assignment 1
+
+::: {.rmdimportant}
+
+Let's make sure we feel good about BADM 371 material.  
+
+All open notes/internet/R4DS/etc. but all work must be your own.
+
+**Monday:** Wrap up previous topic and introduce what you've pre-read about.  Chat.  Play.  Work some examples.
+
+**Wednesday:**  Work more examples.  Chat as needed.  _Live our best lives._  :).  
+
+**Friday:** Apply what we've learned -- demonstrate your mastery (typically in the form of a quiz, lab, or assignment.  Rinse.  Repeat.
+
+:::

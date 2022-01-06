@@ -16,10 +16,11 @@ accommodations
 honor-code-and-plagiarism
 first-generation-version
 continuing-advocate-version
-the-class-routine
+our-class-rhythm
+end-in-mind
 schedule
 applied-analytics-overview
-feel-good-about-analytics-1
+analytics-1-feel-good-about-it
 learning-goals
 toolkit-for-reproducibility
 resources-well-use-r4ds-mostly
@@ -29,6 +30,7 @@ program
 model
 communicate
 learning-goals-1
+assignment-1
 data-and-visualisation
 what-is-in-a-dataset
 dataset-terminology
