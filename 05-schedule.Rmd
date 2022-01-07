@@ -18,7 +18,7 @@ Date | Topic |
 | 	Friday, January 28, 2022	| 	GG PLOT QUIZ	| 
 | 	Monday, January 31, 2022	| 	TIDY SPREAD AND GATHER (R4DS CH 9 DPLYR)	| 
 | 	Wednesday, February 2, 2022	| 	RELATIONAL DATA  (R4DS CH 10 DPLYR)	| 
-| 	Friday, February 4, 2022	| 	QUIZ	| 
+| 	Friday, February 4, 2022	| 	**EXAM 1**	| 
 | 	Monday, February 7, 2022	| 	STRINGS  (R4DS CH 11  stringr)	| 
 | 	Wednesday, February 9, 2022	| 	STRINGS  (R4DS CH 12 factors)	| 
 | 	Friday, February 11, 2022	| 	QUIZ	| 
@@ -31,7 +31,7 @@ Date | Topic |
 | 	Monday, February 28, 2022	| 	Itertation	| 
 | 	Wednesday, March 2, 2022	| 	Itertation	| 
 | 	Friday, March 4, 2022	| 	QUIZ	| 
-| 	Monday, March 7, 2022	| 	LAUNCH PROJECT	| 
+| 	Monday, March 7, 2022	| 	**EXAM 2 LAUNCH PROJECT**	| 
 | 	Wednesday, March 9, 2022	| 	INDEPENDENT PROJECT	| 
 | 	Friday, March 11, 2022	| 	INDEPENDENT PROJECT	| 
 | 	Monday, March 14, 2022	| 	SPRING BREAK	| 
@@ -50,10 +50,10 @@ Date | Topic |
 | 	Wednesday, April 13, 2022	| 	trees & forests	| 
 | 	Friday, April 15, 2022	| 	Easter Holidays	| 
 | 	Monday, April 18, 2022	| 	Easter Holidays	| 
-| 	Wednesday, April 20, 2022	| 	Model Builiding	| 
+| 	Wednesday, April 20, 2022	| 	Model Building	| 
 | 	Friday, April 22, 2022	| 	QUIZ	| 
-| 	Monday, April 25, 2022	| 	PRESENTATIONS	| 
-| 	Wednesday, April 27, 2022	| 	PRESENTATIONS	| 
+| 	Monday, April 25, 2022	| 	**PRESENTATIONS**	| 
+| 	Wednesday, April 27, 2022	| 	**PRESENTATIONS**	| 
 | 	Friday, April 29, 2022	| 	LAST DAY	| 
 | 	Monday, May 2, 2022	| 	Final Exam 8:30 p.m. – F period	| 
 

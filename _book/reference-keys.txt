@@ -29,7 +29,6 @@ wrangle
 program
 model
 communicate
-learning-goals-1
 assignment-1
 data-and-visualisation
 what-is-in-a-dataset

@@ -3,7 +3,7 @@
 **Analytics** is the systematic computational analysis of data or statistics.
 
 
-::: {.rmdnote}
+::: {.rmdimportant}
 
 It is used for the discovery, interpretation, and communication of meaningful patterns in data. It also entails applying data patterns towards effective decision-making. 
 
@@ -16,6 +16,12 @@ Organizations may apply analytics to business data to describe, predict, and imp
 Specifically, areas within analytics include predictive analytics, prescriptive analytics, enterprise decision management, descriptive analytics, cognitive analytics, Big Data Analytics, retail analytics, supply chain analytics, store assortment and stock-keeping unit optimization, marketing optimization and marketing mix modeling, web analytics, call analytics, speech analytics, sales force sizing and optimization, price and promotion modeling, predictive science, graph analytics, credit risk analysis, and fraud analytics. 
 
 Since analytics can require extensive computation (think: big data), the algorithms and software used for analytics harness the most current methods in computer science, statistics, and mathematics.
+
+::: {.rmdimportant}
+
+Do you recall the Target pregnancy story?  Can you extrapolate this to real life?
+
+:::
 
 # Analytics 1 -- Feel Good About It?
 
@@ -38,7 +44,7 @@ Since analytics can require extensive computation (think: big data), the algorit
 
 :::
 
-## Toolkit for reproducibility 
+# Toolkit for reproducibility 
 
 - Scriptability →  R
 - Literate programming (code, narrative, output in one place) →  R Markdown
@@ -96,15 +102,6 @@ Since analytics can require extensive computation (think: big data), the algorit
 29) R Markdown formats
 30) R Markdown workflow
 
-## Learning goals {.build}
-
-By the end of the course, you will be able to...
-
-- gain insight from data
-- gain insight from data, **reproducibly**
-- gain insight from data, reproducibly, **using modern programming tools and techniques**
-- gain insight from data, reproducibly **and collaboratively**, using modern programming tools and techniques
-- gain insight from data, reproducibly **(with literate programming and version control)** and collaboratively, using modern programming tools and techniques
 
 # Assignment 1
 

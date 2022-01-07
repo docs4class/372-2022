@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 11 Exploratory data analysis | BADM 372 Applied Analytics</title>
+<title>Chapter 12 Exploratory data analysis | BADM 372 Applied Analytics</title>
 <meta name="author" content="BADM 372">
-<meta name="description" content="11.1 What is EDA? Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics Often, this is visual – this is what we’ll focus on first But we might...">
+<meta name="description" content="12.1 What is EDA? Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics Often, this is visual – this is what we’ll focus on first But we might...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 11 Exploratory data analysis | BADM 372 Applied Analytics">
+<meta property="og:title" content="Chapter 12 Exploratory data analysis | BADM 372 Applied Analytics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="11.1 What is EDA? Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics Often, this is visual – this is what we’ll focus on first But we might...">
+<meta property="og:description" content="12.1 What is EDA? Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics Often, this is visual – this is what we’ll focus on first But we might...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 11 Exploratory data analysis | BADM 372 Applied Analytics">
-<meta name="twitter:description" content="11.1 What is EDA? Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics Often, this is visual – this is what we’ll focus on first But we might...">
+<meta name="twitter:title" content="Chapter 12 Exploratory data analysis | BADM 372 Applied Analytics">
+<meta name="twitter:description" content="12.1 What is EDA? Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics Often, this is visual – this is what we’ll focus on first But we might...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -46,25 +46,26 @@
 <li><a class="" href="schedule.html"><span class="header-section-number">5</span> Schedule</a></li>
 <li><a class="" href="applied-analytics-overview.html"><span class="header-section-number">6</span> Applied Analytics Overview</a></li>
 <li><a class="" href="analytics-1-feel-good-about-it.html"><span class="header-section-number">7</span> Analytics 1 – Feel Good About It?</a></li>
-<li><a class="" href="assignment-1.html"><span class="header-section-number">8</span> Assignment 1</a></li>
-<li><a class="" href="data-and-visualisation.html"><span class="header-section-number">9</span> Data and visualisation</a></li>
-<li><a class="" href="what-is-in-a-dataset.html"><span class="header-section-number">10</span> What is in a dataset?</a></li>
-<li><a class="active" href="exploratory-data-analysis.html"><span class="header-section-number">11</span> Exploratory data analysis</a></li>
-<li><a class="" href="data-visualization.html"><span class="header-section-number">12</span> Data visualization</a></li>
-<li><a class="" href="why-do-we-visualize.html"><span class="header-section-number">13</span> Why do we visualize?</a></li>
-<li><a class="" href="reproducible-data-analysis.html"><span class="header-section-number">14</span> Reproducible data analysis</a></li>
-<li><a class="" href="data-and-visualisation-1.html"><span class="header-section-number">15</span> Data and visualisation</a></li>
-<li><a class="" href="what-is-in-a-dataset-1.html"><span class="header-section-number">16</span> What is in a dataset?</a></li>
-<li><a class="" href="exploratory-data-analysis-1.html"><span class="header-section-number">17</span> Exploratory data analysis</a></li>
-<li><a class="" href="data-visualization-2.html"><span class="header-section-number">18</span> Data visualization</a></li>
-<li><a class="" href="why-do-we-visualize-1.html"><span class="header-section-number">19</span> Why do we visualize?</a></li>
-<li><a class="" href="about.html"><span class="header-section-number">20</span> About</a></li>
-<li><a class="" href="hello-bookdown.html"><span class="header-section-number">21</span> Hello bookdown</a></li>
-<li><a class="" href="cross.html"><span class="header-section-number">22</span> Cross-references</a></li>
-<li><a class="" href="parts.html"><span class="header-section-number">23</span> Parts</a></li>
-<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">24</span> Footnotes and citations</a></li>
-<li><a class="" href="blocks.html"><span class="header-section-number">25</span> Blocks</a></li>
-<li><a class="" href="sharing-your-book.html"><span class="header-section-number">26</span> Sharing your book</a></li>
+<li><a class="" href="toolkit-for-reproducibility.html"><span class="header-section-number">8</span> Toolkit for reproducibility</a></li>
+<li><a class="" href="assignment-1.html"><span class="header-section-number">9</span> Assignment 1</a></li>
+<li><a class="" href="data-and-visualisation.html"><span class="header-section-number">10</span> Data and visualisation</a></li>
+<li><a class="" href="what-is-in-a-dataset.html"><span class="header-section-number">11</span> What is in a dataset?</a></li>
+<li><a class="active" href="exploratory-data-analysis.html"><span class="header-section-number">12</span> Exploratory data analysis</a></li>
+<li><a class="" href="data-visualization.html"><span class="header-section-number">13</span> Data visualization</a></li>
+<li><a class="" href="why-do-we-visualize.html"><span class="header-section-number">14</span> Why do we visualize?</a></li>
+<li><a class="" href="reproducible-data-analysis.html"><span class="header-section-number">15</span> Reproducible data analysis</a></li>
+<li><a class="" href="data-and-visualisation-1.html"><span class="header-section-number">16</span> Data and visualisation</a></li>
+<li><a class="" href="what-is-in-a-dataset-1.html"><span class="header-section-number">17</span> What is in a dataset?</a></li>
+<li><a class="" href="exploratory-data-analysis-1.html"><span class="header-section-number">18</span> Exploratory data analysis</a></li>
+<li><a class="" href="data-visualization-2.html"><span class="header-section-number">19</span> Data visualization</a></li>
+<li><a class="" href="why-do-we-visualize-1.html"><span class="header-section-number">20</span> Why do we visualize?</a></li>
+<li><a class="" href="about.html"><span class="header-section-number">21</span> About</a></li>
+<li><a class="" href="hello-bookdown.html"><span class="header-section-number">22</span> Hello bookdown</a></li>
+<li><a class="" href="cross.html"><span class="header-section-number">23</span> Cross-references</a></li>
+<li><a class="" href="parts.html"><span class="header-section-number">24</span> Parts</a></li>
+<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">25</span> Footnotes and citations</a></li>
+<li><a class="" href="blocks.html"><span class="header-section-number">26</span> Blocks</a></li>
+<li><a class="" href="sharing-your-book.html"><span class="header-section-number">27</span> Sharing your book</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -73,13 +74,13 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="exploratory-data-analysis" class="section level1" number="11">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="exploratory-data-analysis" class="section level1" number="12">
 <h1>
-<span class="header-section-number">11</span> Exploratory data analysis<a class="anchor" aria-label="anchor" href="#exploratory-data-analysis"><i class="fas fa-link"></i></a>
+<span class="header-section-number">12</span> Exploratory data analysis<a class="anchor" aria-label="anchor" href="#exploratory-data-analysis"><i class="fas fa-link"></i></a>
 </h1>
-<div id="what-is-eda" class="section level2" number="11.1">
+<div id="what-is-eda" class="section level2" number="12.1">
 <h2>
-<span class="header-section-number">11.1</span> What is EDA?<a class="anchor" aria-label="anchor" href="#what-is-eda"><i class="fas fa-link"></i></a>
+<span class="header-section-number">12.1</span> What is EDA?<a class="anchor" aria-label="anchor" href="#what-is-eda"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Exploratory data analysis (EDA) is an approach to analysing data sets to summarize its main characteristics</li>
@@ -87,9 +88,9 @@
 <li>But we might also calculate summary statistics and perform data wrangling/manipulation/transformation at (or before) this stage of the analysis – this is what we’ll focus on next</li>
 </ul>
 </div>
-<div id="mass-vs.-height" class="section level2" number="11.2">
+<div id="mass-vs.-height" class="section level2" number="12.2">
 <h2>
-<span class="header-section-number">11.2</span> Mass vs. height<a class="anchor" aria-label="anchor" href="#mass-vs.-height"><i class="fas fa-link"></i></a>
+<span class="header-section-number">12.2</span> Mass vs. height<a class="anchor" aria-label="anchor" href="#mass-vs.-height"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>How would you describe the relationship between mass and height of Starwars characters?</li>
@@ -98,22 +99,22 @@
 </ul>
 <div class="inline-figure"><img src="08-dataviz_files/figure-html/unnamed-chunk-4-1.png" width="50%" style="display: block; margin: auto;"></div>
 </div>
-<div id="jabba" class="section level2" number="11.3">
+<div id="jabba" class="section level2" number="12.3">
 <h2>
-<span class="header-section-number">11.3</span> Jabba!<a class="anchor" aria-label="anchor" href="#jabba"><i class="fas fa-link"></i></a>
+<span class="header-section-number">12.3</span> Jabba!<a class="anchor" aria-label="anchor" href="#jabba"><i class="fas fa-link"></i></a>
 </h2>
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="what-is-in-a-dataset.html"><span class="header-section-number">10</span> What is in a dataset?</a></div>
-<div class="next"><a href="data-visualization.html"><span class="header-section-number">12</span> Data visualization</a></div>
+<div class="prev"><a href="what-is-in-a-dataset.html"><span class="header-section-number">11</span> What is in a dataset?</a></div>
+<div class="next"><a href="data-visualization.html"><span class="header-section-number">13</span> Data visualization</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#exploratory-data-analysis"><span class="header-section-number">11</span> Exploratory data analysis</a></li>
-<li><a class="nav-link" href="#what-is-eda"><span class="header-section-number">11.1</span> What is EDA?</a></li>
-<li><a class="nav-link" href="#mass-vs.-height"><span class="header-section-number">11.2</span> Mass vs. height</a></li>
-<li><a class="nav-link" href="#jabba"><span class="header-section-number">11.3</span> Jabba!</a></li>
+<li><a class="nav-link" href="#exploratory-data-analysis"><span class="header-section-number">12</span> Exploratory data analysis</a></li>
+<li><a class="nav-link" href="#what-is-eda"><span class="header-section-number">12.1</span> What is EDA?</a></li>
+<li><a class="nav-link" href="#mass-vs.-height"><span class="header-section-number">12.2</span> Mass vs. height</a></li>
+<li><a class="nav-link" href="#jabba"><span class="header-section-number">12.3</span> Jabba!</a></li>
 </ul>
 
       <div class="book-extra">
@@ -131,7 +132,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>BADM 372 Applied Analytics</strong>" was written by BADM 372. It was last built on 2022-01-06.</p>
+    <p>"<strong>BADM 372 Applied Analytics</strong>" was written by BADM 372. It was last built on 2022-01-07.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
