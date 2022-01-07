@@ -44,7 +44,7 @@ Do you recall the Target pregnancy story?  Can you extrapolate this to real life
 
 :::
 
-# Toolkit for reproducibility 
+## Toolkit for reproducibility 
 
 - Scriptability →  R
 - Literate programming (code, narrative, output in one place) →  R Markdown
@@ -105,16 +105,23 @@ Do you recall the Target pregnancy story?  Can you extrapolate this to real life
 
 # Assignment 1
 
-::: {.rmdimportant}
-
 Let's make sure we feel good about BADM 371 material.  
 
-All open notes/internet/R4DS/etc. but all work must be your own.
+All open notes/internet/R4DS/etc., **but all work must be your own**.
 
-**Monday:** Wrap up previous topic and introduce what you've pre-read about.  Chat.  Play.  Work some examples.
+::: {.rmdimportant}
 
-**Wednesday:**  Work more examples.  Chat as needed.  _Live our best lives._  :).  
+Use the starwars data (dplyr package) to answer/do:
 
-**Friday:** Apply what we've learned -- demonstrate your mastery (typically in the form of a quiz, lab, or assignment.  Rinse.  Repeat.
+1. Who is the tallest individual?  Shortest?
+2. How many homeworlds are there?
+3. Which homeworld has the most individuals?  Fewest?  Average # of idividuals per homeworld?
+4. Make a plot of all individuals with mass on the x axis and height on the y axis.
+5. Put a best fit line on this plot.
+6. Who is the biggest outlier in this dataset?
+7. Calculate BMI for all these individuals.  What is the average BMI for all individuals?
+8. What is the average BMI for each homeworld?
+9. Which homeworlds have the greatest percentage of individuals with BMI's greater than the average you found in #8 above?
+10. How many individuals have no missing data?  Which variables have the most missing data?
 
 :::

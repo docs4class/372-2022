@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 14 Why do we visualize? | BADM 372 Applied Analytics</title>
+<title>Chapter 13 Why do we visualize? | BADM 372 Applied Analytics</title>
 <meta name="author" content="BADM 372">
-<meta name="description" content="14.1 Anscombe’s quartet #&gt;  set x   y #&gt; 1  I 10 8.04 #&gt; 2  I 8 6.95 #&gt; 3  I 13 7.58 #&gt; 4  I 9 8.81 #&gt; 5  I 11 8.33 #&gt; 6  I 14 9.96 #&gt; 7  I 6 7.24 #&gt; 8  I 4 4.26 #&gt; 9  I 12 10.84 #&gt; 10  I 7 4.82...">
+<meta name="description" content="13.1 Anscombe’s quartet #&gt;  set x   y #&gt; 1  I 10 8.04 #&gt; 2  I 8 6.95 #&gt; 3  I 13 7.58 #&gt; 4  I 9 8.81 #&gt; 5  I 11 8.33 #&gt; 6  I 14 9.96 #&gt; 7  I 6 7.24 #&gt; 8  I 4 4.26 #&gt; 9  I 12 10.84 #&gt; 10  I 7 4.82...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 14 Why do we visualize? | BADM 372 Applied Analytics">
+<meta property="og:title" content="Chapter 13 Why do we visualize? | BADM 372 Applied Analytics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="14.1 Anscombe’s quartet #&gt;  set x   y #&gt; 1  I 10 8.04 #&gt; 2  I 8 6.95 #&gt; 3  I 13 7.58 #&gt; 4  I 9 8.81 #&gt; 5  I 11 8.33 #&gt; 6  I 14 9.96 #&gt; 7  I 6 7.24 #&gt; 8  I 4 4.26 #&gt; 9  I 12 10.84 #&gt; 10  I 7 4.82...">
+<meta property="og:description" content="13.1 Anscombe’s quartet #&gt;  set x   y #&gt; 1  I 10 8.04 #&gt; 2  I 8 6.95 #&gt; 3  I 13 7.58 #&gt; 4  I 9 8.81 #&gt; 5  I 11 8.33 #&gt; 6  I 14 9.96 #&gt; 7  I 6 7.24 #&gt; 8  I 4 4.26 #&gt; 9  I 12 10.84 #&gt; 10  I 7 4.82...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 14 Why do we visualize? | BADM 372 Applied Analytics">
-<meta name="twitter:description" content="14.1 Anscombe’s quartet #&gt;  set x   y #&gt; 1  I 10 8.04 #&gt; 2  I 8 6.95 #&gt; 3  I 13 7.58 #&gt; 4  I 9 8.81 #&gt; 5  I 11 8.33 #&gt; 6  I 14 9.96 #&gt; 7  I 6 7.24 #&gt; 8  I 4 4.26 #&gt; 9  I 12 10.84 #&gt; 10  I 7 4.82...">
+<meta name="twitter:title" content="Chapter 13 Why do we visualize? | BADM 372 Applied Analytics">
+<meta name="twitter:description" content="13.1 Anscombe’s quartet #&gt;  set x   y #&gt; 1  I 10 8.04 #&gt; 2  I 8 6.95 #&gt; 3  I 13 7.58 #&gt; 4  I 9 8.81 #&gt; 5  I 11 8.33 #&gt; 6  I 14 9.96 #&gt; 7  I 6 7.24 #&gt; 8  I 4 4.26 #&gt; 9  I 12 10.84 #&gt; 10  I 7 4.82...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -46,26 +46,25 @@
 <li><a class="" href="schedule.html"><span class="header-section-number">5</span> Schedule</a></li>
 <li><a class="" href="applied-analytics-overview.html"><span class="header-section-number">6</span> Applied Analytics Overview</a></li>
 <li><a class="" href="analytics-1-feel-good-about-it.html"><span class="header-section-number">7</span> Analytics 1 – Feel Good About It?</a></li>
-<li><a class="" href="toolkit-for-reproducibility.html"><span class="header-section-number">8</span> Toolkit for reproducibility</a></li>
-<li><a class="" href="assignment-1.html"><span class="header-section-number">9</span> Assignment 1</a></li>
-<li><a class="" href="data-and-visualisation.html"><span class="header-section-number">10</span> Data and visualisation</a></li>
-<li><a class="" href="what-is-in-a-dataset.html"><span class="header-section-number">11</span> What is in a dataset?</a></li>
-<li><a class="" href="exploratory-data-analysis.html"><span class="header-section-number">12</span> Exploratory data analysis</a></li>
-<li><a class="" href="data-visualization.html"><span class="header-section-number">13</span> Data visualization</a></li>
-<li><a class="active" href="why-do-we-visualize.html"><span class="header-section-number">14</span> Why do we visualize?</a></li>
-<li><a class="" href="reproducible-data-analysis.html"><span class="header-section-number">15</span> Reproducible data analysis</a></li>
-<li><a class="" href="data-and-visualisation-1.html"><span class="header-section-number">16</span> Data and visualisation</a></li>
-<li><a class="" href="what-is-in-a-dataset-1.html"><span class="header-section-number">17</span> What is in a dataset?</a></li>
-<li><a class="" href="exploratory-data-analysis-1.html"><span class="header-section-number">18</span> Exploratory data analysis</a></li>
-<li><a class="" href="data-visualization-2.html"><span class="header-section-number">19</span> Data visualization</a></li>
-<li><a class="" href="why-do-we-visualize-1.html"><span class="header-section-number">20</span> Why do we visualize?</a></li>
-<li><a class="" href="about.html"><span class="header-section-number">21</span> About</a></li>
-<li><a class="" href="hello-bookdown.html"><span class="header-section-number">22</span> Hello bookdown</a></li>
-<li><a class="" href="cross.html"><span class="header-section-number">23</span> Cross-references</a></li>
-<li><a class="" href="parts.html"><span class="header-section-number">24</span> Parts</a></li>
-<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">25</span> Footnotes and citations</a></li>
-<li><a class="" href="blocks.html"><span class="header-section-number">26</span> Blocks</a></li>
-<li><a class="" href="sharing-your-book.html"><span class="header-section-number">27</span> Sharing your book</a></li>
+<li><a class="" href="assignment-1.html"><span class="header-section-number">8</span> Assignment 1</a></li>
+<li><a class="" href="data-and-visualisation.html"><span class="header-section-number">9</span> Data and visualisation</a></li>
+<li><a class="" href="what-is-in-a-dataset.html"><span class="header-section-number">10</span> What is in a dataset?</a></li>
+<li><a class="" href="exploratory-data-analysis.html"><span class="header-section-number">11</span> Exploratory data analysis</a></li>
+<li><a class="" href="data-visualization.html"><span class="header-section-number">12</span> Data visualization</a></li>
+<li><a class="active" href="why-do-we-visualize.html"><span class="header-section-number">13</span> Why do we visualize?</a></li>
+<li><a class="" href="reproducible-data-analysis.html"><span class="header-section-number">14</span> Reproducible data analysis</a></li>
+<li><a class="" href="data-and-visualisation-1.html"><span class="header-section-number">15</span> Data and visualisation</a></li>
+<li><a class="" href="what-is-in-a-dataset-1.html"><span class="header-section-number">16</span> What is in a dataset?</a></li>
+<li><a class="" href="exploratory-data-analysis-1.html"><span class="header-section-number">17</span> Exploratory data analysis</a></li>
+<li><a class="" href="data-visualization-2.html"><span class="header-section-number">18</span> Data visualization</a></li>
+<li><a class="" href="why-do-we-visualize-1.html"><span class="header-section-number">19</span> Why do we visualize?</a></li>
+<li><a class="" href="about.html"><span class="header-section-number">20</span> About</a></li>
+<li><a class="" href="hello-bookdown.html"><span class="header-section-number">21</span> Hello bookdown</a></li>
+<li><a class="" href="cross.html"><span class="header-section-number">22</span> Cross-references</a></li>
+<li><a class="" href="parts.html"><span class="header-section-number">23</span> Parts</a></li>
+<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">24</span> Footnotes and citations</a></li>
+<li><a class="" href="blocks.html"><span class="header-section-number">25</span> Blocks</a></li>
+<li><a class="" href="sharing-your-book.html"><span class="header-section-number">26</span> Sharing your book</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -74,13 +73,13 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="why-do-we-visualize" class="section level1" number="14">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="why-do-we-visualize" class="section level1" number="13">
 <h1>
-<span class="header-section-number">14</span> Why do we visualize?<a class="anchor" aria-label="anchor" href="#why-do-we-visualize"><i class="fas fa-link"></i></a>
+<span class="header-section-number">13</span> Why do we visualize?<a class="anchor" aria-label="anchor" href="#why-do-we-visualize"><i class="fas fa-link"></i></a>
 </h1>
-<div id="anscombes-quartet" class="section level2" number="14.1">
+<div id="anscombes-quartet" class="section level2" number="13.1">
 <h2>
-<span class="header-section-number">14.1</span> Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#anscombes-quartet"><i class="fas fa-link"></i></a>
+<span class="header-section-number">13.1</span> Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#anscombes-quartet"><i class="fas fa-link"></i></a>
 </h2>
 <pre><code>#&gt;    set  x     y
 #&gt; 1    I 10  8.04
@@ -174,9 +173,9 @@
 #&gt; 43  IV  8  7.91
 #&gt; 44  IV  8  6.89</code></pre>
 </div>
-<div id="summarising-anscombes-quartet" class="section level2" number="14.2">
+<div id="summarising-anscombes-quartet" class="section level2" number="13.2">
 <h2>
-<span class="header-section-number">14.2</span> Summarising Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#summarising-anscombes-quartet"><i class="fas fa-link"></i></a>
+<span class="header-section-number">13.2</span> Summarising Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#summarising-anscombes-quartet"><i class="fas fa-link"></i></a>
 </h2>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">quartet</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span>
@@ -195,32 +194,32 @@
 <span class="co">#&gt; 3 III        9   7.5   3.32  2.03 0.816</span>
 <span class="co">#&gt; 4 IV         9   7.50  3.32  2.03 0.817</span></code></pre></div>
 </div>
-<div id="visualizing-anscombes-quartet" class="section level2" number="14.3">
+<div id="visualizing-anscombes-quartet" class="section level2" number="13.3">
 <h2>
-<span class="header-section-number">14.3</span> Visualizing Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#visualizing-anscombes-quartet"><i class="fas fa-link"></i></a>
+<span class="header-section-number">13.3</span> Visualizing Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#visualizing-anscombes-quartet"><i class="fas fa-link"></i></a>
 </h2>
 <div class="inline-figure"><img src="08-dataviz_files/figure-html/quartet-plot-1.png" width="80%" style="display: block; margin: auto;"></div>
 </div>
-<div id="about-anscombes-quartet" class="section level2" number="14.4">
+<div id="about-anscombes-quartet" class="section level2" number="13.4">
 <h2>
-<span class="header-section-number">14.4</span> About Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#about-anscombes-quartet"><i class="fas fa-link"></i></a>
+<span class="header-section-number">13.4</span> About Anscombe’s quartet<a class="anchor" aria-label="anchor" href="#about-anscombes-quartet"><i class="fas fa-link"></i></a>
 </h2>
 <blockquote>
 <p>Anscombe’s quartet comprises four data sets that have nearly identical simple descriptive statistics, yet have very different distributions and appear very different when graphed. Each dataset consists of eleven (x,y) points. They were constructed in 1973 by the statistician Francis Anscombe to demonstrate both the importance of graphing data before analyzing it and the effect of outliers and other influential observations on statistical properties. He described the article as being intended to counter the impression among statisticians that “numerical calculations are exact, but graphs are <em>ROUGH</em>.”</p>
 </blockquote>
 </div>
-<div id="age-at-first-kiss" class="section level2" number="14.5">
+<div id="age-at-first-kiss" class="section level2" number="13.5">
 <h2>
-<span class="header-section-number">14.5</span> Age at first kiss<a class="anchor" aria-label="anchor" href="#age-at-first-kiss"><i class="fas fa-link"></i></a>
+<span class="header-section-number">13.5</span> Age at first kiss<a class="anchor" aria-label="anchor" href="#age-at-first-kiss"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Do you see anything out of the ordinary?</li>
 </ul>
 <div class="inline-figure"><img src="08-dataviz_files/figure-html/unnamed-chunk-12-1.png" width="672"></div>
 </div>
-<div id="facebook-visits" class="section level2" number="14.6">
+<div id="facebook-visits" class="section level2" number="13.6">
 <h2>
-<span class="header-section-number">14.6</span> Facebook visits<a class="anchor" aria-label="anchor" href="#facebook-visits"><i class="fas fa-link"></i></a>
+<span class="header-section-number">13.6</span> Facebook visits<a class="anchor" aria-label="anchor" href="#facebook-visits"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>How are people reporting lower vs. higher values of FB visits?</li>
@@ -230,18 +229,18 @@
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="data-visualization.html"><span class="header-section-number">13</span> Data visualization</a></div>
-<div class="next"><a href="reproducible-data-analysis.html"><span class="header-section-number">15</span> Reproducible data analysis</a></div>
+<div class="prev"><a href="data-visualization.html"><span class="header-section-number">12</span> Data visualization</a></div>
+<div class="next"><a href="reproducible-data-analysis.html"><span class="header-section-number">14</span> Reproducible data analysis</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#why-do-we-visualize"><span class="header-section-number">14</span> Why do we visualize?</a></li>
-<li><a class="nav-link" href="#anscombes-quartet"><span class="header-section-number">14.1</span> Anscombe’s quartet</a></li>
-<li><a class="nav-link" href="#summarising-anscombes-quartet"><span class="header-section-number">14.2</span> Summarising Anscombe’s quartet</a></li>
-<li><a class="nav-link" href="#visualizing-anscombes-quartet"><span class="header-section-number">14.3</span> Visualizing Anscombe’s quartet</a></li>
-<li><a class="nav-link" href="#about-anscombes-quartet"><span class="header-section-number">14.4</span> About Anscombe’s quartet</a></li>
-<li><a class="nav-link" href="#age-at-first-kiss"><span class="header-section-number">14.5</span> Age at first kiss</a></li>
-<li><a class="nav-link" href="#facebook-visits"><span class="header-section-number">14.6</span> Facebook visits</a></li>
+<li><a class="nav-link" href="#why-do-we-visualize"><span class="header-section-number">13</span> Why do we visualize?</a></li>
+<li><a class="nav-link" href="#anscombes-quartet"><span class="header-section-number">13.1</span> Anscombe’s quartet</a></li>
+<li><a class="nav-link" href="#summarising-anscombes-quartet"><span class="header-section-number">13.2</span> Summarising Anscombe’s quartet</a></li>
+<li><a class="nav-link" href="#visualizing-anscombes-quartet"><span class="header-section-number">13.3</span> Visualizing Anscombe’s quartet</a></li>
+<li><a class="nav-link" href="#about-anscombes-quartet"><span class="header-section-number">13.4</span> About Anscombe’s quartet</a></li>
+<li><a class="nav-link" href="#age-at-first-kiss"><span class="header-section-number">13.5</span> Age at first kiss</a></li>
+<li><a class="nav-link" href="#facebook-visits"><span class="header-section-number">13.6</span> Facebook visits</a></li>
 </ul>
 
       <div class="book-extra">
