@@ -19,6 +19,7 @@ continuing-advocate-version
 our-class-rhythm
 end-in-mind
 schedule
+images
 applied-analytics-overview
 analytics-1-feel-good-about-it
 learning-goals
