@@ -11,6 +11,7 @@ This course is designed to introduce to data science.  Students will apply stati
 At the end of this course students should be able to:
 
 By the end of the course, you will be able to…
+
 - gain insight from data
 - gain insight from data, reproducibly
 - gain insight from data, reproducibly, using modern programming tools and techniques

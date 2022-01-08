@@ -1,7 +1,7 @@
 --- 
 title: "BADM 372 Applied Analytics"
 author: "BADM 372"
-date: "2022-01-07"
+date: "2022-01-08"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -17,7 +17,7 @@ csl: chicago-fullnote-bibliography.csl
 
 ::: {.rmdimportant}
 
-This website serves as headquarters for **BADM 372 Intro to Applied  Analytics**. 
+This website serves as headquarters for **BADM 372 Applied  Analytics**. 
 
 :::
 

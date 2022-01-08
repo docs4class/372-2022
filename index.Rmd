@@ -17,7 +17,7 @@ csl: chicago-fullnote-bibliography.csl
 
 ::: {.rmdimportant}
 
-This website serves as headquarters for **BADM 372 Intro to Applied  Analytics**. 
+This website serves as headquarters for **BADM 372 Applied  Analytics**. 
 
 :::
 
