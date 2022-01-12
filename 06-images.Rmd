@@ -1,5 +1,6 @@
 # images?
 
+SETH"S TEST LINE
 
 ```{r}
 knitr::include_graphics(("_images/r4ds_cover.png"))
