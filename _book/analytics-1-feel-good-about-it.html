@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 8 Analytics 1 – Feel Good About It? | BADM 372 Applied Analytics</title>
+<title>Chapter 7 Analytics 1 – Feel Good About It? | BADM 372 Applied Analytics</title>
 <meta name="author" content="BADM 372">
-<meta name="description" content="R basics Data wrangling Modeling (lm, glm, etc.) lm glm test &amp; training data measures of fit, confusion matrix  8.1 Learning goals  By the end of the course, you will be able to…  Data Science...">
+<meta name="description" content="R basics Data wrangling Modeling (lm, glm, etc.) lm glm test &amp; training data measures of fit, confusion matrix  7.1 Learning goals  By the end of the course, you will be able to…  Data Science...">
 <meta name="generator" content="bookdown 0.24 with bs4_book()">
-<meta property="og:title" content="Chapter 8 Analytics 1 – Feel Good About It? | BADM 372 Applied Analytics">
+<meta property="og:title" content="Chapter 7 Analytics 1 – Feel Good About It? | BADM 372 Applied Analytics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="R basics Data wrangling Modeling (lm, glm, etc.) lm glm test &amp; training data measures of fit, confusion matrix  8.1 Learning goals  By the end of the course, you will be able to…  Data Science...">
+<meta property="og:description" content="R basics Data wrangling Modeling (lm, glm, etc.) lm glm test &amp; training data measures of fit, confusion matrix  7.1 Learning goals  By the end of the course, you will be able to…  Data Science...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 8 Analytics 1 – Feel Good About It? | BADM 372 Applied Analytics">
-<meta name="twitter:description" content="R basics Data wrangling Modeling (lm, glm, etc.) lm glm test &amp; training data measures of fit, confusion matrix  8.1 Learning goals  By the end of the course, you will be able to…  Data Science...">
+<meta name="twitter:title" content="Chapter 7 Analytics 1 – Feel Good About It? | BADM 372 Applied Analytics">
+<meta name="twitter:description" content="R basics Data wrangling Modeling (lm, glm, etc.) lm glm test &amp; training data measures of fit, confusion matrix  7.1 Learning goals  By the end of the course, you will be able to…  Data Science...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.11/header-attrs.js"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -44,29 +44,28 @@
 <li><a class="" href="our-class-rhythm.html"><span class="header-section-number">3</span> Our Class Rhythm</a></li>
 <li><a class="" href="end-in-mind.html"><span class="header-section-number">4</span> End in Mind</a></li>
 <li><a class="" href="schedule.html"><span class="header-section-number">5</span> Schedule</a></li>
-<li><a class="" href="images.html"><span class="header-section-number">6</span> images?</a></li>
-<li><a class="" href="applied-analytics-overview.html"><span class="header-section-number">7</span> Applied Analytics Overview</a></li>
-<li><a class="active" href="analytics-1-feel-good-about-it.html"><span class="header-section-number">8</span> Analytics 1 – Feel Good About It?</a></li>
-<li><a class="" href="assignment-1.html"><span class="header-section-number">9</span> Assignment 1</a></li>
-<li><a class="" href="data-and-visualisation.html"><span class="header-section-number">10</span> Data and visualisation</a></li>
-<li><a class="" href="what-is-in-a-dataset.html"><span class="header-section-number">11</span> What is in a dataset?</a></li>
-<li><a class="" href="exploratory-data-analysis.html"><span class="header-section-number">12</span> Exploratory data analysis</a></li>
-<li><a class="" href="data-visualization.html"><span class="header-section-number">13</span> Data visualization</a></li>
-<li><a class="" href="why-do-we-visualize.html"><span class="header-section-number">14</span> Why do we visualize?</a></li>
-<li><a class="" href="reproducible-data-analysis.html"><span class="header-section-number">15</span> Reproducible data analysis</a></li>
-<li><a class="" href="assignment-1-in-rmarkdown.html"><span class="header-section-number">16</span> Assignment 1 in Rmarkdown</a></li>
-<li><a class="" href="data-and-visualisation-1.html"><span class="header-section-number">17</span> Data and visualisation</a></li>
-<li><a class="" href="what-is-in-a-dataset-1.html"><span class="header-section-number">18</span> What is in a dataset?</a></li>
-<li><a class="" href="exploratory-data-analysis-1.html"><span class="header-section-number">19</span> Exploratory data analysis</a></li>
-<li><a class="" href="data-visualization-2.html"><span class="header-section-number">20</span> Data visualization</a></li>
-<li><a class="" href="why-do-we-visualize-1.html"><span class="header-section-number">21</span> Why do we visualize?</a></li>
-<li><a class="" href="about.html"><span class="header-section-number">22</span> About</a></li>
-<li><a class="" href="hello-bookdown.html"><span class="header-section-number">23</span> Hello bookdown</a></li>
-<li><a class="" href="cross.html"><span class="header-section-number">24</span> Cross-references</a></li>
-<li><a class="" href="parts.html"><span class="header-section-number">25</span> Parts</a></li>
-<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">26</span> Footnotes and citations</a></li>
-<li><a class="" href="blocks.html"><span class="header-section-number">27</span> Blocks</a></li>
-<li><a class="" href="sharing-your-book.html"><span class="header-section-number">28</span> Sharing your book</a></li>
+<li><a class="" href="applied-analytics-overview.html"><span class="header-section-number">6</span> Applied Analytics Overview</a></li>
+<li><a class="active" href="analytics-1-feel-good-about-it.html"><span class="header-section-number">7</span> Analytics 1 – Feel Good About It?</a></li>
+<li><a class="" href="assignment-1.html"><span class="header-section-number">8</span> Assignment 1</a></li>
+<li><a class="" href="data-and-visualisation.html"><span class="header-section-number">9</span> Data and visualisation</a></li>
+<li><a class="" href="what-is-in-a-dataset.html"><span class="header-section-number">10</span> What is in a dataset?</a></li>
+<li><a class="" href="exploratory-data-analysis.html"><span class="header-section-number">11</span> Exploratory data analysis</a></li>
+<li><a class="" href="data-visualization.html"><span class="header-section-number">12</span> Data visualization</a></li>
+<li><a class="" href="why-do-we-visualize.html"><span class="header-section-number">13</span> Why do we visualize?</a></li>
+<li><a class="" href="reproducible-data-analysis.html"><span class="header-section-number">14</span> Reproducible data analysis</a></li>
+<li><a class="" href="assignment-1-in-rmarkdown.html"><span class="header-section-number">15</span> Assignment 1 in Rmarkdown</a></li>
+<li><a class="" href="data-and-visualisation-1.html"><span class="header-section-number">16</span> Data and visualisation</a></li>
+<li><a class="" href="what-is-in-a-dataset-1.html"><span class="header-section-number">17</span> What is in a dataset?</a></li>
+<li><a class="" href="exploratory-data-analysis-1.html"><span class="header-section-number">18</span> Exploratory data analysis</a></li>
+<li><a class="" href="data-visualization-2.html"><span class="header-section-number">19</span> Data visualization</a></li>
+<li><a class="" href="why-do-we-visualize-1.html"><span class="header-section-number">20</span> Why do we visualize?</a></li>
+<li><a class="" href="about.html"><span class="header-section-number">21</span> About</a></li>
+<li><a class="" href="hello-bookdown.html"><span class="header-section-number">22</span> Hello bookdown</a></li>
+<li><a class="" href="cross.html"><span class="header-section-number">23</span> Cross-references</a></li>
+<li><a class="" href="parts.html"><span class="header-section-number">24</span> Parts</a></li>
+<li><a class="" href="footnotes-and-citations.html"><span class="header-section-number">25</span> Footnotes and citations</a></li>
+<li><a class="" href="blocks.html"><span class="header-section-number">26</span> Blocks</a></li>
+<li><a class="" href="sharing-your-book.html"><span class="header-section-number">27</span> Sharing your book</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -75,9 +74,9 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="analytics-1-feel-good-about-it" class="section level1" number="8">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="analytics-1-feel-good-about-it" class="section level1" number="7">
 <h1>
-<span class="header-section-number">8</span> Analytics 1 – Feel Good About It?<a class="anchor" aria-label="anchor" href="#analytics-1-feel-good-about-it"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7</span> Analytics 1 – Feel Good About It?<a class="anchor" aria-label="anchor" href="#analytics-1-feel-good-about-it"><i class="fas fa-link"></i></a>
 </h1>
 <ul>
 <li>R basics</li>
@@ -91,9 +90,9 @@
 </ul>
 </li>
 </ul>
-<div id="learning-goals" class="section level2" number="8.1">
+<div id="learning-goals" class="section level2" number="7.1">
 <h2>
-<span class="header-section-number">8.1</span> Learning goals<a class="anchor" aria-label="anchor" href="#learning-goals"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.1</span> Learning goals<a class="anchor" aria-label="anchor" href="#learning-goals"><i class="fas fa-link"></i></a>
 </h2>
 <blockquote>
 <p>By the end of the course, you will be able to…</p>
@@ -102,9 +101,9 @@
 <p><a href="https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png">Data Science Model</a></p>
 </div>
 </div>
-<div id="toolkit-for-reproducibility" class="section level2" number="8.2">
+<div id="toolkit-for-reproducibility" class="section level2" number="7.2">
 <h2>
-<span class="header-section-number">8.2</span> Toolkit for reproducibility<a class="anchor" aria-label="anchor" href="#toolkit-for-reproducibility"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.2</span> Toolkit for reproducibility<a class="anchor" aria-label="anchor" href="#toolkit-for-reproducibility"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Scriptability → R</li>
@@ -112,9 +111,9 @@
 <li>Version control → Git / GitHub</li>
 </ul>
 </div>
-<div id="resources-well-use-r4ds-mostly" class="section level2" number="8.3">
+<div id="resources-well-use-r4ds-mostly" class="section level2" number="7.3">
 <h2>
-<span class="header-section-number">8.3</span> Resources We’ll Use (R4DS, mostly)<a class="anchor" aria-label="anchor" href="#resources-well-use-r4ds-mostly"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.3</span> Resources We’ll Use (R4DS, mostly)<a class="anchor" aria-label="anchor" href="#resources-well-use-r4ds-mostly"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Explore</li>
@@ -124,9 +123,9 @@
 <li>Communicate</li>
 </ol>
 </div>
-<div id="explore" class="section level2" number="8.4">
+<div id="explore" class="section level2" number="7.4">
 <h2>
-<span class="header-section-number">8.4</span> Explore<a class="anchor" aria-label="anchor" href="#explore"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.4</span> Explore<a class="anchor" aria-label="anchor" href="#explore"><i class="fas fa-link"></i></a>
 </h2>
 <ol start="3" style="list-style-type: decimal">
 <li>Data visualisation</li>
@@ -137,9 +136,9 @@
 <li>Workflow: projects</li>
 </ol>
 </div>
-<div id="wrangle" class="section level2" number="8.5">
+<div id="wrangle" class="section level2" number="7.5">
 <h2>
-<span class="header-section-number">8.5</span> Wrangle<a class="anchor" aria-label="anchor" href="#wrangle"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.5</span> Wrangle<a class="anchor" aria-label="anchor" href="#wrangle"><i class="fas fa-link"></i></a>
 </h2>
 <ol start="9" style="list-style-type: decimal">
 <li>Introduction</li>
@@ -152,9 +151,9 @@
 <li>Dates and times</li>
 </ol>
 </div>
-<div id="program" class="section level2" number="8.6">
+<div id="program" class="section level2" number="7.6">
 <h2>
-<span class="header-section-number">8.6</span> Program<a class="anchor" aria-label="anchor" href="#program"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.6</span> Program<a class="anchor" aria-label="anchor" href="#program"><i class="fas fa-link"></i></a>
 </h2>
 <ol start="17" style="list-style-type: decimal">
 <li>Introduction</li>
@@ -164,9 +163,9 @@
 <li>Iteration</li>
 </ol>
 </div>
-<div id="model" class="section level2" number="8.7">
+<div id="model" class="section level2" number="7.7">
 <h2>
-<span class="header-section-number">8.7</span> Model<a class="anchor" aria-label="anchor" href="#model"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.7</span> Model<a class="anchor" aria-label="anchor" href="#model"><i class="fas fa-link"></i></a>
 </h2>
 <ol start="22" style="list-style-type: decimal">
 <li>Introduction</li>
@@ -175,9 +174,9 @@
 <li>Many models</li>
 </ol>
 </div>
-<div id="communicate" class="section level2" number="8.8">
+<div id="communicate" class="section level2" number="7.8">
 <h2>
-<span class="header-section-number">8.8</span> Communicate<a class="anchor" aria-label="anchor" href="#communicate"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.8</span> Communicate<a class="anchor" aria-label="anchor" href="#communicate"><i class="fas fa-link"></i></a>
 </h2>
 <ol start="26" style="list-style-type: decimal">
 <li>Introduction</li>
@@ -189,20 +188,20 @@
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="applied-analytics-overview.html"><span class="header-section-number">7</span> Applied Analytics Overview</a></div>
-<div class="next"><a href="assignment-1.html"><span class="header-section-number">9</span> Assignment 1</a></div>
+<div class="prev"><a href="applied-analytics-overview.html"><span class="header-section-number">6</span> Applied Analytics Overview</a></div>
+<div class="next"><a href="assignment-1.html"><span class="header-section-number">8</span> Assignment 1</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#analytics-1-feel-good-about-it"><span class="header-section-number">8</span> Analytics 1 – Feel Good About It?</a></li>
-<li><a class="nav-link" href="#learning-goals"><span class="header-section-number">8.1</span> Learning goals</a></li>
-<li><a class="nav-link" href="#toolkit-for-reproducibility"><span class="header-section-number">8.2</span> Toolkit for reproducibility</a></li>
-<li><a class="nav-link" href="#resources-well-use-r4ds-mostly"><span class="header-section-number">8.3</span> Resources We’ll Use (R4DS, mostly)</a></li>
-<li><a class="nav-link" href="#explore"><span class="header-section-number">8.4</span> Explore</a></li>
-<li><a class="nav-link" href="#wrangle"><span class="header-section-number">8.5</span> Wrangle</a></li>
-<li><a class="nav-link" href="#program"><span class="header-section-number">8.6</span> Program</a></li>
-<li><a class="nav-link" href="#model"><span class="header-section-number">8.7</span> Model</a></li>
-<li><a class="nav-link" href="#communicate"><span class="header-section-number">8.8</span> Communicate</a></li>
+<li><a class="nav-link" href="#analytics-1-feel-good-about-it"><span class="header-section-number">7</span> Analytics 1 – Feel Good About It?</a></li>
+<li><a class="nav-link" href="#learning-goals"><span class="header-section-number">7.1</span> Learning goals</a></li>
+<li><a class="nav-link" href="#toolkit-for-reproducibility"><span class="header-section-number">7.2</span> Toolkit for reproducibility</a></li>
+<li><a class="nav-link" href="#resources-well-use-r4ds-mostly"><span class="header-section-number">7.3</span> Resources We’ll Use (R4DS, mostly)</a></li>
+<li><a class="nav-link" href="#explore"><span class="header-section-number">7.4</span> Explore</a></li>
+<li><a class="nav-link" href="#wrangle"><span class="header-section-number">7.5</span> Wrangle</a></li>
+<li><a class="nav-link" href="#program"><span class="header-section-number">7.6</span> Program</a></li>
+<li><a class="nav-link" href="#model"><span class="header-section-number">7.7</span> Model</a></li>
+<li><a class="nav-link" href="#communicate"><span class="header-section-number">7.8</span> Communicate</a></li>
 </ul>
 
       <div class="book-extra">
