@@ -61,6 +61,8 @@ reproducible-data-analysis
 reproducibility-checklist
 near-term-goals
 long-term-goals
+assignment-1-in-rmarkdown
+r-markdown
 data-and-visualisation-1
 what-is-in-a-dataset-1
 dataset-terminology-1
